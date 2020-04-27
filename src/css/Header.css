@@ -1,0 +1,162 @@
+.header {  
+    display: grid;
+    scroll-behavior: none;
+    grid-template-columns: 15% 5% 65% 15%;
+    grid-template-rows: 77px;
+    background-color: black;
+}
+
+.header .logo_header {
+    grid-column: 1;
+}
+
+.logo_header button {
+    width: 100%;
+    border: 0;
+    padding: 0;
+}
+
+.header .logo_header button img{
+    width: 100%;
+    height: 77px;
+}
+
+.header .tri_crte{
+    grid-column: 2;
+}
+
+.header .desno_header {
+    grid-column: 4;
+}
+
+.header .desno_header img {
+    width: 25%;
+    padding-top: 16px;
+}
+
+.NB_css {
+    list-style: none;
+    z-index: 1000;
+}
+
+.NB_css ul {
+    grid-column: 3;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.NB_css ul li {
+    float: left;
+    width: 16.666%;
+}
+
+.NB_css ul li a{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    color: #71cbc9;
+    text-transform: uppercase;
+    padding-top: 25px;
+    height: 77px;
+}
+
+.NB_css ul li a:hover{
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+.NB_css ul li ul li{
+    display: none;
+    width: 100%;
+    background-color: black;
+}
+
+.NB_css ul li:hover ul li{
+    display: block;
+}
+
+.NB_css .checkbtn {
+    float: left;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 850px){    
+
+    .NB_css .checkbtn {
+        display: block;
+    }
+
+    .NB_css .checkbtn1 {
+        display: block;
+    }
+
+    .NB_css ul li a:hover{
+        background: #2c3e50; 
+    }
+
+    .NB_css ul{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #2c3e50;
+        opacity: .9;
+        top: 56px;
+        left: -100%;
+        transition: all .5s;
+        color: white;
+        overflow-y: scroll;
+    }
+
+    .NB_css ul li ul {
+        display: fixed;
+        width: 30%;
+        height: 240px;
+        margin: 0 0 0 2%;
+    }
+
+    .NB_css ul li ul li a{
+        font-size: 16px;
+        border-left: 2px solid white;
+        border-radius: 50%;
+    }
+
+    .NB_css ul li ul li{
+        display: block;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .NB_css .li_posle_padajuceg {
+        margin-top: 320px;
+    }
+
+    .NB_css ul li{
+        float: none;
+        margin-left: 2%;
+    }
+
+    .NB_css nav ul li a{
+        font-size: 18px;
+    }
+
+    .NB_css ul li ul img {
+        display: none;
+    }
+
+    .logo_nb {
+        display: none;
+    }
+
+    .NB_css #check:checked ~ ul{
+        left: 0;
+    }
+
+    .NB_css #check:checked ~ ul li ul{
+        left: 7%;
+        top: 150px
+    }
+}
