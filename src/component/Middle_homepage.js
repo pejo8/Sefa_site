@@ -18,11 +18,8 @@ render(){
             </div>
             <div className="partneri_logovi">
                 <button> <img src="/partner1.png" alt="partner_logo" /> </button>
-                <button> <img src="/partner2.png" alt="partner_logo" /> </button>
-                <button> <img src="/partner1.png" alt="partner_logo" /> </button>
-                <button> <img src="/partner2.png" alt="partner_logo" /> </button>
-                <button> <img src="/partner1.png" alt="partner_logo" /> </button>
-                <button> <img src="/partner2.png" alt="partner_logo" /> </button>
+                <button> <img src="/partner2.jpg" alt="partner_logo" /> </button>
+                <button> <img src="/partner3.png" alt="partner_logo" /> </button>
             </div>
         </div>
     </div>

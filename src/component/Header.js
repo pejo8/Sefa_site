@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/Header.css';
 import { Link } from 'react-router-dom';
-// import { __ } from '../utils/i18n';
 
 class Header extends Component {
 render(){
@@ -19,8 +18,10 @@ render(){
         </label> */}
 
         <div className="logo_header">
-          <button href="/">
-            <img src="./logo.jpg" alt="logo" />
+          <button >
+          <Link to="/" >
+            <img src="./logo.png" alt="logo" />
+          </Link>
           </button>
         </div>
 
@@ -33,7 +34,7 @@ render(){
 
         <div className="NB_css">
           <ul>
-            <li><a href="/"> O nama </a></li>
+            <li><a href="/oNama"> O nama </a></li>
             <li><a href="/#"> Projekti </a>
               <ul>
                 <li><Link to="/#"> Projekat1 </Link></li>
@@ -51,9 +52,9 @@ render(){
                   <li><Link to="/#"> Clan4 </Link></li>
                 </ul>
               </li>
-              <li><a href="/#" className="nsk">Partneri</a></li>
-              <li><a href="/#" className="nsk">Magazin</a></li>
-              <li><a href="/#" className="nsk">Kontakt</a></li>
+              <li><a href="/partneri" className="nsk">Partneri</a></li>
+              <li><a href="/magazin" className="nsk">Magazin</a></li>
+              <li><a href="/kontakt" className="nsk">Kontakt</a></li>
             </div>
           </ul>
         </div>

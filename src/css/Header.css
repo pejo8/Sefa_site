@@ -1,7 +1,7 @@
 .header {  
     display: grid;
     scroll-behavior: none;
-    grid-template-columns: 15% 5% 65% 15%;
+    grid-template-columns: 10% 5% 68% 17%;
     grid-template-rows: 77px;
     background-color: black;
 }
@@ -31,7 +31,7 @@
 
 .header .desno_header img {
     width: 25%;
-    padding-top: 16px;
+    padding-top: 1%;
 }
 
 .NB_css {
