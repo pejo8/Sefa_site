@@ -2,6 +2,10 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Homepage from './component/Homepage';
+import ONama from './component/ONama';
+import Partneri from './component/Partneri';
+import Magazin from './component/Magazin';
+import Kontakt from './component/Kontakt';
 
 class App extends React.Component {
 
@@ -19,6 +23,10 @@ class App extends React.Component {
       <BrowserRouter>
         <Switch>
           <Route path="/" exact component={Homepage} />
+          <Route path="/oNama" exact component={ONama} />
+          <Route path="/partneri" exact component={Partneri} />
+          <Route path="/magazin" exact component={Magazin} />
+          <Route path="/kontakt" exact component={Kontakt} />
         </Switch>
       </BrowserRouter>
     );

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/Slideshow.css'
-import {TweenMax, Power3} from 'gsap';
+import { TweenMax, Power3 } from 'gsap';
 import $ from 'jquery'
 import {windowHeight} from 'react-window-size'
 
@@ -11,7 +11,7 @@ class Slideshow extends React.Component {
     
     function slideshowSwitch(slideshow,index,auto){
       if(slideshow.data('wait')) return;
-    
+
       var slides = slideshow.find('.slide');
       var activeSlide = slides.filter('.is-active');
       var activeSlideImage = activeSlide.find('.image-container');
