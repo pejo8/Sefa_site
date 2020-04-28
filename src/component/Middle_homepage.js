@@ -8,7 +8,11 @@ render(){
   return (
     <div>
         <div className ="baner">
-            <p> PRAVE STVARI NA PRAVI NACIN </p>
+            <img src="/sefa_baner.jpg" alt="baner" className="baner_img"/>
+        </div>
+
+        <div className="middle_projekti">
+            
         </div>
 
         <div className="partneri">
@@ -19,10 +23,10 @@ render(){
             <div className="partneri_logovi">
                 <button> <img src="/partner1.png" alt="partner_logo" /> </button>
                 <button> <img src="/partner2.png" alt="partner_logo" /> </button>
-                <button> <img src="/partner1.png" alt="partner_logo" /> </button>
+                <button> <img src="/partner3.png" alt="partner_logo" /> </button>
                 <button> <img src="/partner2.png" alt="partner_logo" /> </button>
                 <button> <img src="/partner1.png" alt="partner_logo" /> </button>
-                <button> <img src="/partner2.png" alt="partner_logo" /> </button>
+                <button> <img src="/partner3.png" alt="partner_logo" /> </button>
             </div>
         </div>
     </div>
