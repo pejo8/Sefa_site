@@ -18,6 +18,10 @@ render(){
         </label> */}
 
         <div className="logo_header">
+<<<<<<< HEAD
+
+=======
+>>>>>>> master
           <button >
           <Link to="/" >
             <img src="./logo.png" alt="logo" />
@@ -28,7 +32,7 @@ render(){
         <div className="tri_crte">
           <input type="checkbox" id="check"/>
           <label for="check" class="checkbtn">
-          <img src="/fa_bars.png" className="img_bars" alt="fa_bars"></img>
+            <img src="/fa_bars.png" className="img_bars" alt="fa_bars"></img>
           </label>
         </div>
 
@@ -37,10 +41,11 @@ render(){
             <li><a href="/oNama"> O nama </a></li>
             <li><a href="/#"> Projekti </a>
               <ul>
-                <li><Link to="/#"> Projekat1 </Link></li>
-                <li><Link to="/#"> Projekat2 </Link></li>
-                <li><Link to="/#"> Projekat3 </Link></li>
-                <li><Link to="/#"> Projekat4 </Link></li>
+                <li><Link to="/#"> Repsus </Link></li>
+                <li><Link to="/#"> prava stvar </Link></li>
+                <li><Link to="/#"> ekof u pokretu </Link></li>
+                <li><Link to="/#"> sport business day </Link></li>
+                <li><Link to="/#"> bez straha </Link></li>
               </ul>
             </li>
             <div className="li_posle_padajuceg">
@@ -60,12 +65,38 @@ render(){
         </div>
 
         <div className="desno_header">
-          <img src="/logovi.png" alt="logo" /> 
-          <img src="/logovi.png" alt="logo" />
-          <img src="/logovi.png" alt="logo" />
-          <img src="/logovi.png" alt="logo" />
+          <button> <img src="/logo_facebook.png" alt="logo" /> </button>
+          <button> <img src="/logo_instagram.png" alt="logo" /> </button>
+          <button> <img src="/logo_youtube.png" alt="logo" /> </button>
+          <button> <img src="/logo_linkedin.png" alt="logo" /> </button>
         </div>
 
+      </div>
+
+      <div className="NB_response">
+          <ul>
+            <li><a href="/"> O nama </a></li>
+            <li><a href="/#"> Projekti </a>
+              <ul>
+                <li><Link to="/#"> Repsus </Link></li>
+                <li><Link to="/#"> prava stvar </Link></li>
+                <li><Link to="/#"> ekof u pokretu </Link></li>
+                <li><Link to="/#"> sport business day </Link></li>
+                <li><Link to="/#"> bez straha </Link></li>
+              </ul>
+            </li>
+              <li><a href="/#" className="nsk"> Clanovi </a>
+                <ul>
+                  <li><Link to="/#"> Clan1 </Link></li>
+                  <li><Link to="/#"> Clan2 </Link></li>
+                  <li><Link to="/#"> Clan3 </Link></li>
+                  <li><Link to="/#"> Clan4 </Link></li>
+                </ul>
+              </li>
+              <li><a href="/#" className="nsk">Partneri</a></li>
+              <li><a href="/#" className="nsk">Magazin</a></li>
+              <li><a href="/#" className="nsk">Kontakt</a></li>
+          </ul>
       </div>
     </div>
   );

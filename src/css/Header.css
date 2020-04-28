@@ -1,7 +1,7 @@
 .header {  
     display: grid;
     scroll-behavior: none;
-    grid-template-columns: 10% 5% 68% 17%;
+    grid-template-columns: 13% 5% 65% 17%;
     grid-template-rows: 77px;
     background-color: black;
 }
@@ -21,21 +21,26 @@
     height: 77px;
 }
 
-.header .tri_crte{
-    grid-column: 2;
-}
-
 .header .desno_header {
     grid-column: 4;
+    display: flex;
+    margin-left: 0;
 }
 
-.header .desno_header img {
-    width: 25%;
-    padding-top: 1%;
+.header .desno_header button {
+    width: 20%;
+    border: 0;
+    background: black;
+    margin-left: 3%;
+}
+
+.header .desno_header button img{
+    width: 130%;
+    border: 1px solid #71cbc9;
+    border-radius: 50%;
 }
 
 .NB_css {
-    list-style: none;
     z-index: 1000;
 }
 
@@ -77,86 +82,144 @@
     display: block;
 }
 
-.NB_css .checkbtn {
-    float: left;
+.NB_response {
+    position: absolute;
+    background: black;
+    width: 100%;
+    z-index: 3000;
+    height: 700px;
+    display: none;
+    opacity: 0.92;
+    margin-top: -77px;
+}
+
+.NB_response ul {
+    display: flex;
+    list-style: none;
+    margin-top: 80px;
+}
+
+.NB_response ul li {
+    width: 16.666%;
+    border-right: 1px solid white;
+}
+
+.NB_response ul li a {
+    font-size: 22px;
+    color: #71cbc9;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.NB_response ul li ul {
+    display: block;
+    margin-top: 12px;
+}
+
+.NB_response ul li ul li {
+    display: block;
+    border: none;
+    width: 100%;
+}
+
+.NB_response ul li ul li a {
+    font-size: 16px;
     color: white;
+}
+
+.header .tri_crte{
+    grid-column: 2;
+}
+
+.header .tri_crte .checkbtn {
     cursor: pointer;
+    margin-top: 22px;
+}
+
+.header .tri_crte:hover {
+    background: rgb(50, 50, 50);
+}
+
+.header .tri_crte .img_bars {
+    width: 40%;
+}
+
+.header .tri_crte #check {
     display: none;
 }
 
 @media (max-width: 850px){    
 
-    .NB_css .checkbtn {
+    .header {
+        grid-template-columns: none;
+    }
+
+    .header .logo_header {
+        width: 60%;
+    }
+
+    .header .tri_crte {
         display: block;
     }
 
-    .NB_css .checkbtn1 {
-        display: block;
+    .header .tri_crte .checkbtn {
+        float: right;
+        width: 120px;
+        margin-top: 15px;
     }
 
-    .NB_css ul li a:hover{
-        background: #2c3e50; 
-    }
-
-    .NB_css ul{
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background: #2c3e50;
-        opacity: .9;
-        top: 56px;
-        left: -100%;
-        transition: all .5s;
-        color: white;
-        overflow-y: scroll;
-    }
-
-    .NB_css ul li ul {
-        display: fixed;
-        width: 30%;
-        height: 240px;
-        margin: 0 0 0 2%;
-    }
-
-    .NB_css ul li ul li a{
-        font-size: 16px;
-        border-left: 2px solid white;
-        border-radius: 50%;
-    }
-
-    .NB_css ul li ul li{
-        display: block;
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .NB_css .li_posle_padajuceg {
-        margin-top: 320px;
-    }
-
-    .NB_css ul li{
-        float: none;
-        margin-left: 2%;
-    }
-
-    .NB_css nav ul li a{
-        font-size: 18px;
-    }
-
-    .NB_css ul li ul img {
+    .header .desno_header {
         display: none;
     }
 
-    .logo_nb {
+    .NB_css {
         display: none;
     }
 
-    .NB_css #check:checked ~ ul{
-        left: 0;
+    .header .tri_crte #check:checked ~ .NB_response {
+        display: block;
     }
 
-    .NB_css #check:checked ~ ul li ul{
+    /* .NB_css #check:checked ~ ul li ul{
         left: 7%;
         top: 150px
+    } */
+
+    .NB_response {
+        opacity: 1;
+    }
+
+    .NB_response ul {
+        display: block;
+        margin-left: 5%;
+        margin-top: 20px;
+    }
+
+    .NB_response ul li {
+        border: none;
+    }
+
+    .NB_response ul li a{
+        font-size: 12px;
+    }
+
+    /* .NB_response ul li {
+        display: flex;
+    } */
+
+    .NB_response ul li ul {
+        margin: 10px 0 10px 15%;
+        border-left: 2px solid #71cbc9;
+        border-radius: 20%;
+        text-align: left;
+    }
+
+    .NB_response ul li ul li {
+        width: 160px;
+    }
+
+    .NB_response ul li ul li a {
+        font-size: 12px;
+        margin-left: 10px;
     }
 }
