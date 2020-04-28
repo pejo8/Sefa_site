@@ -20,7 +20,7 @@ render(){
 
         <div className="logo_header">
           <button href="/">
-            <img src="./logo.jpg" alt="logo" />
+            <img src="./logo.png" alt="logo" />
           </button>
         </div>
 
@@ -29,6 +29,10 @@ render(){
           <label for="check" class="checkbtn">
           <img src="/fa_bars.png" className="img_bars" alt="fa_bars"></img>
           </label>
+        </div>
+
+        <div className="probna">
+          <p> DA LI CE ISKOCITI???? </p>
         </div>
 
         <div className="NB_css">
@@ -65,6 +69,31 @@ render(){
           <img src="/logovi.png" alt="logo" />
         </div>
 
+      </div>
+
+      <div className="NB_response">
+          <ul>
+            <li><a href="/"> O nama </a></li>
+            <li><a href="/#"> Projekti </a>
+              <ul>
+                <li><Link to="/#"> Repsus </Link></li>
+                <li><Link to="/#"> prava stvar </Link></li>
+                <li><Link to="/#"> ekof u pokretu </Link></li>
+                <li><Link to="/#"> sport business day </Link></li>
+              </ul>
+            </li>
+              <li><a href="/#" className="nsk"> Clanovi </a>
+                <ul>
+                  <li><Link to="/#"> Clan1 </Link></li>
+                  <li><Link to="/#"> Clan2 </Link></li>
+                  <li><Link to="/#"> Clan3 </Link></li>
+                  <li><Link to="/#"> Clan4 </Link></li>
+                </ul>
+              </li>
+              <li><a href="/#" className="nsk">Partneri</a></li>
+              <li><a href="/#" className="nsk">Magazin</a></li>
+              <li><a href="/#" className="nsk">Kontakt</a></li>
+          </ul>
       </div>
     </div>
   );

@@ -35,7 +35,6 @@
 }
 
 .NB_css {
-    list-style: none;
     z-index: 1000;
 }
 
@@ -77,21 +76,99 @@
     display: block;
 }
 
-.NB_css .checkbtn {
-    float: left;
+.NB_response {
+    position: absolute;
+    background: black;
+    width: 100%;
+    z-index: 3000;
+    height: 700px;
+    display: none;
+    margin-top: -77px;
+}
+
+.NB_response ul {
+    display: flex;
+    list-style: none;
+    margin-top: 80px;
+}
+
+.NB_response ul li {
+    width: 16.666%;
+    border-right: 1px solid white;
+}
+
+.NB_response ul li a {
+    font-size: 22px;
+    color: #71cbc9;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.NB_response ul li ul {
+    display: block;
+    margin-top: 12px;
+}
+
+.NB_response ul li ul li {
+    display: block;
+    border: none;
+    width: 100%;
+}
+
+.NB_response ul li ul li a {
+    font-size: 16px;
     color: white;
+}
+
+ .probna {
+    position: absolute;
+    left: -20%;
+}
+
+.header .tri_crte #check:checked ~ .NB_css ul{
+    background: white;
+}
+
+.header .tri_crte .checkbtn {
     cursor: pointer;
+    margin-top: 22px;
+}
+
+.header .tri_crte:hover {
+    background: rgb(50, 50, 50);
+}
+
+.header .img_bars {
+    width: 40%;
+}
+
+.header .tri_crte #check {
     display: none;
 }
 
 @media (max-width: 850px){    
 
-    .NB_css .checkbtn {
-        display: block;
+    .header {
+        grid-template-columns: none;
     }
 
-    .NB_css .checkbtn1 {
+    .header .logo_header {
+        width: 70%;
+    }
+
+    .tri_crte {
         display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    .tri_crte .checkbtn {
+        float: right;
+        width: 120px;
+    }
+
+    .header .desno_header {
+        display: none;
     }
 
     .NB_css ul li a:hover{
@@ -143,20 +220,50 @@
         font-size: 18px;
     }
 
-    .NB_css ul li ul img {
-        display: none;
+    .header .tri_crte #check:checked ~ .NB_response {
+        opacity: 1;
     }
 
-    .logo_nb {
-        display: none;
-    }
-
-    .NB_css #check:checked ~ ul{
-        left: 0;
-    }
-
-    .NB_css #check:checked ~ ul li ul{
+    /* .NB_css #check:checked ~ ul li ul{
         left: 7%;
         top: 150px
+    } */
+
+    .NB_response {
+        opacity: 1;
+    }
+
+    .NB_response ul {
+        display: block;
+        margin-left: 5%;
+        margin-top: 20px;
+    }
+
+    .NB_response ul li {
+        border: none;
+    }
+
+    .NB_response ul li a{
+        font-size: 12px;
+    }
+
+    /* .NB_response ul li {
+        display: flex;
+    } */
+
+    .NB_response ul li ul {
+        margin: 10px 0 10px 15%;
+        border-left: 2px solid #71cbc9;
+        border-radius: 20%;
+        text-align: left;
+    }
+
+    .NB_response ul li ul li {
+        width: 160px;
+    }
+
+    .NB_response ul li ul li a {
+        font-size: 12px;
+        margin-left: 10px;
     }
 }
