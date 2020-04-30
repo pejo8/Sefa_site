@@ -4,6 +4,7 @@
 }
 
 .baner {
+    margin-top: 50px;
     background: rgb(24, 24, 24);
     border-bottom: 2px solid #71cbc9;
     border-top: 1px solid #71cbc9;
@@ -160,26 +161,88 @@
     }
 
     .partneri .slider_partneri {
-        display: block;
+        display: flex;
         width: 100%;
-        height: 100px;
-        background-image: url("../logo.svg");
-        animation: slide 10s infinite;
+        height: 140px;
+        background: #343a40;
     }
 
-    @keyframes slide {
-        25% {
-            background: url("../partner3.png");
-            background-size: 30%;
+    .partneri .slider_partneri div {
+        width: 25%;
+        height: 100px;
+        margin: 30px 4% 30px 4%;
+        background: #343a40;
+    }
+
+    .partneri .slider_partneri .btn1_sp{
+        width: 80px;
+        height: 80px;
+        border: 0;
+        background: url("/partner1.png");
+        background-size: 100%;
+        animation: slide1 12s infinite;
+    }
+
+    .partneri .slider_partneri .btn2_sp{
+        width: 80px;
+        height: 80px;
+        border: 0;
+        background: url("/partner2.jpg");
+        background-size: 100%;
+        animation: slide2 12s infinite;
+    }
+
+    .partneri .slider_partneri .btn3_sp{
+        width: 80px;
+        height: 80px;
+        border: 0;
+        background: url("/partner3.png");
+        background-size: 100%;
+        animation: slide3 12s infinite;
+    }
+
+    @keyframes slide1 {
+        33% {
+            background: url("/partner2.jpg");
+            background-size: 100%;
         }
-        50% {
-            background: url("../logo.svg");
-        }
-        75% {
-            background: url("../logo.svg");
+        66% {
+            background: url("/partner3.png");
+            background-size: 100%;
         }
         100% {
-            background: url("../logo.svg");
+            background: url("/partner1.png");
+            background-size: 100%;
+        }
+    }
+
+    @keyframes slide2 {
+        33% {
+            background: url("/partner3.png");
+            background-size: 100%;
+        }
+        66% {
+            background: url("/partner1.png");
+            background-size: 100%;
+        }
+        100% {
+            background: url("/partner2.jpg");
+            background-size: 100%;
+        }
+    }
+
+    @keyframes slide3 {
+        33% {
+            background: url("/partner1.png");
+            background-size: 100%;
+        }
+        66% {
+            background: url("/partner2.jpg");
+            background-size: 100%;
+        }
+        100% {
+            background: url("/partner3.png");
+            background-size: 100%;
         }
     }
 }

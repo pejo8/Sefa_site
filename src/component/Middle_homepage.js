@@ -17,7 +17,7 @@ render(){
             </div>
             <div className="projekti">
                 <div>
-                    <button> <img src="/slika1.jpg" alt="project"></img> </button>
+                    <button> <img src="/slika1.jpg" alt="project" title="aaa"></img> </button>
                     <button> <img src="/slika2.jpg" alt="project"></img> </button>
                 </div>
                 <div>
@@ -44,7 +44,15 @@ render(){
                 <button> <img src="/partner3.png" alt="partner_logo" /> </button>
             </div>
             <div className="slider_partneri">
-                
+                <div>
+                    <button className="btn1_sp">  </button>
+                </div>
+                <div>
+                    <button className="btn2_sp">  </button>
+                </div>
+                <div>
+                    <button className="btn3_sp">  </button>
+                </div>
             </div>
         </div>
     </div>
