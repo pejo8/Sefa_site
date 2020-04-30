@@ -18,10 +18,6 @@ render(){
         </label> */}
 
         <div className="logo_header">
-<<<<<<< HEAD
-
-=======
->>>>>>> master
           <button >
           <Link to="/" >
             <img src="./logo.png" alt="logo" />

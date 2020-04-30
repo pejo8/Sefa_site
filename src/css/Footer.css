@@ -7,8 +7,8 @@
   color:white;
 }
 .logo img{
-  margin-left:-40px;
-  width: 140%;
+  margin-left:-20px;
+  width: 90%;
   height: auto;
 }
 .center {
@@ -75,14 +75,14 @@
 }
 .footer .contact-social .social ul li {
   display: inline-block;
-  margin: 5px 0 0 0;
+  margin: 10px 0 0 0;
 }
 .footer .contact-social .social ul li img{
   width: 100%;
 }
 .footer .contact-social .social ul li a {
   display: block;
-  width: 20px;
+  width: 30px;
 }
 #cr{
   margin-left: -20px;

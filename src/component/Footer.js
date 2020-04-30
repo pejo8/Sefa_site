@@ -71,7 +71,7 @@ function Footer() {
         </div>
         <div className="logo">
           <a href="/#" title="">
-            <img src="/beliLogo.png" alt=""/></a>
+            <img src="/logo.png" alt=""/></a>
         </div>
         <p id="cr">Copyright © 2020, All Rights Reserved</p>
         <br/>
