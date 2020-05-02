@@ -2,7 +2,37 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/Middle_homepage.css';
 
+var image = ["/slika1.jpg","/slika2.jpg","/slika3.jpg","/slika4.jpg"];
+var i = image.length;
+var slider_content = [<a href="/"> <img src= {image[i-1]} alt='project' /> </a>];
+
 class Middle_homepage extends Component {
+
+    componentWillMount(){
+        this.setState({brojac:i});
+        console.log(this.state);
+    }
+
+    nextImage(){
+        if(i < image.length){
+            i = i+1;
+        } else{
+            i = 1;
+        }
+        slider_content = [<a href="/"> <img src= {image[i-1]} alt='project' /> </a>]
+        this.setState({brojac:i});
+    }
+
+    prewImage(){
+        if(i > 1){
+            i = i-1;
+        } else{
+            i = image.length;
+        }
+        slider_content = [<a href="/"> <img src= {image[i-1]} alt='project' /> </a>]
+        this.setState({brojac:i});
+    }
+
 render(){
 
   return (
@@ -29,6 +59,15 @@ render(){
                 </div>
             </div>
         </div>
+
+        <div className="projekti_response">
+                <p> Nasi projekti </p>
+                <div id="box">
+                    {slider_content}
+                </div>
+                <button class="prew" onClick={this.prewImage.bind(this)}> {"<"} </button>
+                <button class="next" onClick={this.nextImage.bind(this)}> > </button>
+            </div>
 
         <div className="partneri">
             <div className="partneri_tekst">

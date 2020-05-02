@@ -44,13 +44,13 @@ render(){
                 <li><Link to="/#"> bez straha </Link></li>
               </ul>
             </li>
-            <div className="li_posle_padajuceg">
+            <div>
               <li><a href="/#" className="nsk"> Clanovi </a>
                 <ul>
-                  <li><Link to="/#"> Clan1 </Link></li>
-                  <li><Link to="/#"> Clan2 </Link></li>
-                  <li><Link to="/#"> Clan3 </Link></li>
-                  <li><Link to="/#"> Clan4 </Link></li>
+                  <li><Link to="/#"> Timovi </Link></li>
+                  <li><Link to="/#"> Alumni </Link></li>
+                  <li><Link to="/#"> Savetodavno telo </Link></li>
+                  <li><Link to="/#"> Budi deo Sefe </Link></li>
                 </ul>
               </li>
               <li><a href="/partneri" className="nsk">Partneri</a></li>

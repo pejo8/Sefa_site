@@ -4,7 +4,7 @@
 }
 
 .baner {
-    margin-top: 50px;
+    margin-top: 100px;
     background: rgb(24, 24, 24);
     border-bottom: 2px solid #71cbc9;
     border-top: 1px solid #71cbc9;
@@ -105,7 +105,11 @@
     opacity: 0.8;
 }
 
-.partneri .slider_partneri {
+.projekti_response {
+    display: none;
+}
+
+.slider_partneri {
     display: none;
 }
 
@@ -114,9 +118,51 @@
         height: 60px;
     }
     
-    .middle_projekti p{
-        font-size: 26px;
-        margin-bottom: -7px;
+    .middle_projekti {
+        display: none;
+    }
+    
+    .projekti_response {
+        margin: 30px 0 30px 0;
+        padding: 0;
+        width: 100%;
+        position: relative;
+        /* border: 10px solid white;
+        box-shadow: 0px 0px 5px 2px; */
+        display: block;
+    }
+    
+    .projekti_response p {
+        font-size: 30px;
+        color: black;
+        letter-spacing: 2px;
+        margin-bottom: -10px;
+    }
+    
+    .projekti_response img {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .projekti_response button {
+        border: none;
+        background-color: black;
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        color: white;
+        cursor: pointer;
+        opacity: 70%;
+    }
+    
+    .projekti_response .prew {
+        left: 0;
+        border-radius: 0px 10px 10px 0;
+    }
+    
+    .projekti_response .next {
+        right: 0%;
+        border-radius: 10px 0 0 10px;
     }
 
     .partneri {
@@ -124,17 +170,17 @@
     }
 
     .partneri .partneri_tekst {
-        height: 70px;
+        height: 50px;
         text-align: center;
         padding: 0;
     }
 
     .partneri .partneri_tekst .tekst_nasi{
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .partneri .partneri_tekst .tekst_partneri{
-        font-size: 26px;
+        font-size: 22px;
     }    
 
     /* .partneri .partneri_logovi {
