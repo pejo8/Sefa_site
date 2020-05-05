@@ -96,6 +96,7 @@
     display: none;
     opacity: 0.92;
     margin-top: -77px;
+    text-align: center;
 }
 
 .NB_response ul {
@@ -139,14 +140,12 @@
 .header .tri_crte .checkbtn {
     cursor: pointer;
     margin-top: 22px;
-}
-
-.header .tri_crte:hover {
-    background: black;
+    margin-left: 50%;
 }
 
 .header .tri_crte .img_bars {
-    width: 40%;
+    width: 30px;
+    height: 33px;
 }
 
 .header .tri_crte #check {
@@ -168,7 +167,7 @@
     }
 
     .header .logo_header {
-        width: 80%;
+        width: 60%;
     }
 
     .header .tri_crte {
@@ -177,8 +176,14 @@
 
     .header .tri_crte .checkbtn {
         float: right;
-        width: 120px;
-        margin-top: 15px;
+        margin-top: 13px;
+    }
+
+    .header .tri_crte .img_bars {
+        width: 50px;
+        height: 51px;
+        float: right;
+        margin-right: 30px;
     }
 
     .header .desno_header {

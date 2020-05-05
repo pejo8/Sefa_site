@@ -4,7 +4,7 @@
 }
 
 .baner {
-    margin-top: 100px;
+    margin-top: 30px;
     background: rgb(24, 24, 24);
     border-bottom: 2px solid #71cbc9;
     border-top: 1px solid #71cbc9;
@@ -23,7 +23,8 @@
 .partneri .partneri_tekst {
     grid-column: 1;
     text-align: right;
-    background: rgb(24, 24, 24);
+    background: black;
+    opacity: 0.95;
     color: white;
     padding: 13px 15% 0 0;
 }
@@ -41,14 +42,14 @@
 .partneri .partneri_logovi {
     grid-column: 2;
     display: flex;
-    background: #343a40;
+    background-image: url("/background-Dark-Grey.jpg");
     border-left: 1px solid #71cbc9;
 }
 
 .partneri .partneri_logovi button {
     width: 13%;
     height: 90px;
-    background: #343a40;
+    background: none;
     margin: 20px 0 20px 2.5%;
     border: 0;
     padding: 0;

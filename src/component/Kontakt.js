@@ -1,7 +1,7 @@
 import React from 'react';
-import './../css/Kontakt.css';
 import Header from './Header';
 import Footer from './Footer';
+import MiddleKontakt from './Middle_kontakt';
 
 class Kontakt extends React.Component {
 
@@ -9,6 +9,7 @@ class Kontakt extends React.Component {
     return (
       <div className="Kontakt">
           <Header />
+          <MiddleKontakt />
           <Footer />
       </div>
       );
