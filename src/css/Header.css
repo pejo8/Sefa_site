@@ -87,6 +87,31 @@
     display: block;
 }
 
+.NB_css ul li ul li ul {
+    display: none;
+    width: 60%;
+    margin-left: 20%;
+    height: 180px;
+    margin-top: -10px;
+    margin-bottom: -60px;
+}
+
+.NB_css ul li ul li ul li {
+    height: 45px;
+    margin-top: -10px;
+}
+
+.NB_css ul li ul li ul li a {
+    color: #71cbc9;
+    height: 45px;
+    font-size: 13px;
+    margin-top: -10px;
+}
+
+.NB_css ul li ul li:hover ul {
+    display: block;
+}
+
 .NB_response {
     position: absolute;
     background: black;
@@ -243,6 +268,11 @@
     }
     .dugmeNavBar {
         display: none;
+    }
+
+    .NB_response ul li ul li ul{
+        border-radius: 0;
+        margin-left: 35px;
     }
 }
 

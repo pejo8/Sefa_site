@@ -8,9 +8,7 @@ class Footer1 extends React.Component {
   render() {
     return (
       <div className="Footer1">
-            <div className="logo_footer">
-                <div> <img src="./logo.png" alt="logo" /> </div>
-            </div>
+          <div className="gornji_deo">
             <div className="sajt_footer">
                 <p> Sajt </p>
                 <ul>
@@ -32,6 +30,24 @@ class Footer1 extends React.Component {
                     <li><a href="/oNama"> Bez straha </a></li>
                 </ul>
             </div>
+            <div className="sajt_footer">
+                <p> Clanovi </p>
+                <ul>
+                    <li><a href="/oNama"> Timovi </a></li>
+                    <li><a href="/oNama"> Alumni </a></li>
+                    <li><a href="/oNama"> Savetodavni tim </a></li>
+                    <li><a href="/oNama"> Budi deo Sefe </a></li>
+                </ul>
+            </div>
+            <div className="sajt_footer">
+                <p> Timovi </p>
+                <ul>
+                    <li><a href="/oNama"> Tim1  </a></li>
+                    <li><a href="/oNama"> Tim2 </a></li>
+                    <li><a href="/oNama"> Tim3 </a></li>
+                    <li><a href="/oNama"> Tim4 </a></li>
+                </ul>
+            </div>
             <div className="kontakt_footer">
                 <p> Kontakt </p>
                 <div className="icons_kontakt_footer"> <FontAwesomeIcon icon={faPhone} className="icon_fi_footer"/>
@@ -50,6 +66,21 @@ class Footer1 extends React.Component {
                     <button> <img src="/logo_linkedin.png" alt="logo" /> </button>
                 </div>
             </div>
+        </div>
+
+        <div className="footer_responsive">
+            <div> Sefa na drustvenim mrezama </div>
+            <div className="mreze_footer">
+                    <button> <img src="/logo_facebook.png" alt="logo" /> </button>
+                    <button> <img src="/logo_instagram.png" alt="logo" /> </button>
+                    <button> <img src="/logo_youtube.png" alt="logo" /> </button>
+                    <button> <img src="/logo_linkedin.png" alt="logo" /> </button>
+            </div>
+        </div>
+
+        <div className="logo_footer">
+            <div> <img src="./logo.png" alt="logo" /> </div>
+        </div>
       </div>
       );
   }

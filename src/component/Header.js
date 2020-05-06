@@ -64,12 +64,21 @@ class Header extends Component {
               </ul>
             </li>
             <div>
-              <li><a href="/#" className="nsk"> Clanovi </a>
+              <li className="li_clanovi"><a href="/timovi" className="nsk"> Clanovi </a>
                 <ul>
-                  <li><Link to="/#"> Timovi </Link></li>
-                  <li><Link to="/#"> Alumni </Link></li>
-                  <li><Link to="/#"> Savetodavno telo </Link></li>
-                  <li><Link to="/#"> Budi deo Sefe </Link></li>
+                  <li><Link to="/#"> Timovi </Link>
+                    <ul>
+                      <li><Link to="/#"> Tim1 </Link></li>
+                      <li><Link to="/#"> Tim2 </Link></li>
+                      <li><Link to="/#"> Tim3 </Link></li>
+                      <li><Link to="/#"> Tim4 </Link></li>
+                  </ul>
+                  </li>
+                  <div className="ostatak_clanova">
+                    <li><Link to="/#"> Alumni </Link></li>
+                    <li><Link to="/#"> Savetodavno telo </Link></li>
+                    <li><Link to="/#"> Budi deo Sefe </Link></li>
+                  </div>
                 </ul>
               </li>
               <li><a href="/partneri" className="nsk">Partneri</a></li>
@@ -104,10 +113,17 @@ class Header extends Component {
             </li>
               <li><a href="/#" className="nsk"> Clanovi </a>
                 <ul>
-                  <li><Link to="/#"> Clan1 </Link></li>
-                  <li><Link to="/#"> Clan2 </Link></li>
-                  <li><Link to="/#"> Clan3 </Link></li>
-                  <li><Link to="/#"> Clan4 </Link></li>
+                  <li><Link to="/#"> Timovi </Link>
+                    <ul>
+                      <li><Link to="/#"> Tim 1 </Link></li>
+                      <li><Link to="/#"> Tim 2 </Link></li>
+                      <li><Link to="/#"> Tim 3 </Link></li>
+                      <li><Link to="/#"> Tim 4 </Link></li>
+                    </ul>
+                  </li>
+                  <li><Link to="/#"> Alumni </Link></li>
+                  <li><Link to="/#"> Savetodavno telo </Link></li>
+                  <li><Link to="/#"> Budi deo sefe </Link></li>
                 </ul>
               </li>
               <li><a href="/#" className="nsk">Partneri</a></li>

@@ -6,6 +6,7 @@ import ONama from './component/ONama';
 import Partneri from './component/Partneri';
 import Magazin from './component/Magazin';
 import Kontakt from './component/Kontakt';
+import Timovi from './component/Timovi';
 
 class App extends React.Component {
 
@@ -27,6 +28,7 @@ class App extends React.Component {
           <Route path="/partneri" exact component={Partneri} />
           <Route path="/magazin" exact component={Magazin} />
           <Route path="/kontakt" exact component={Kontakt} />
+          <Route path="/timovi" exact component={Timovi} />
         </Switch>
       </BrowserRouter>
     );

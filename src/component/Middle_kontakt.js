@@ -22,7 +22,7 @@ class Middle_kontakt extends React.Component {
                 <div> sefa.ekof@gmail.com </div>
             </div>
             <div className="icons_kontakt"> <FontAwesomeIcon icon={faMapPin} className="icon_fi" />
-                <div1> LOKACIJA </div1>
+                <div1> ADRESA </div1>
                 <div> Kamenicka 6, Beograd </div>
             </div>
         </div>

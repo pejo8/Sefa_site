@@ -24,7 +24,6 @@
     grid-column: 1;
     text-align: right;
     background: black;
-    opacity: 0.95;
     color: white;
     padding: 13px 15% 0 0;
 }
@@ -211,14 +210,14 @@
         display: flex;
         width: 100%;
         height: 140px;
-        background: #343a40;
+        background-image: url("/background-Dark-Grey.jpg");
     }
 
     .partneri .slider_partneri div {
         width: 25%;
         height: 100px;
         margin: 30px 4% 30px 4%;
-        background: #343a40;
+        background-image: none;
     }
 
     .partneri .slider_partneri .btn1_sp{
