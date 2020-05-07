@@ -10,12 +10,14 @@
 
 .header .logo_header {
     grid-column: 1;
+    background: black;
 }
 
 .logo_header button {
     width: 100%;
     border: 0;
     padding: 0;
+    background: black;
 }
 
 .header .logo_header button img{
@@ -174,6 +176,16 @@
 .header .tri_crte #check {
     display: none;
 }
+
+.header .checkbtn1 {
+    cursor: pointer;
+    background: red;
+}
+
+.header #check1 {
+    background: red;
+}
+
 .dugmeNavBar {
     position: relative;
     float: right;
@@ -194,7 +206,16 @@
     }
 
     .NB_response ul li ul li .padajuciTimovi {
-        display: block;
+        display: none;
+    }
+
+    .NB_response ul li ul li .padajuciTimovi li {
+        width: 240px;
+    }
+
+    .fi_menu_timovi {
+        margin-left: -14px;
+        margin-top: -5px;
     }
 
     .dugmeTimovi {

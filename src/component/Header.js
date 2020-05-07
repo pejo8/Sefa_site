@@ -9,10 +9,23 @@ class Header extends Component {
   constructor(init){
     super(init);
     this.handleChange = this.handleChange.bind(this);
+    this.showTimovi = this.showTimovi.bind(this);
   }
   handleChange({target}){
     let nb = document.getElementById('NB_response');
     if (target.checked){
+      nb.style.display = "block";
+    } else {
+      nb.style.display = "none";
+    }
+  }
+
+  showTimovi({target}) {
+    let nb = document.getElementById('padajuciTimovi');
+    if (target.checked){
+      if( nb.style.display === "block")
+        nb.style.display = "none";
+      else
       nb.style.display = "block";
     } else {
       nb.style.display = "none";
@@ -27,15 +40,6 @@ class Header extends Component {
 
   }
 
-  showTimovi({target}) {
-    let nb = document.getElementById('padajuciTimovi');
-    if (target.checked){
-      nb.style.display = "block";
-    } else {
-      nb.style.display = "none";
-    }
-  }
-
   render(){
 
   return (
@@ -47,7 +51,7 @@ class Header extends Component {
         <div className="logo_header">
           <button >
           <Link to="/" >
-            <img src="./logo.png" alt="logo" />
+            <img src="./logo1.png" alt="logo" />
           </Link>
           </button>
         </div>
@@ -122,12 +126,18 @@ class Header extends Component {
             </li>
               <li><a href="/#" className="nsk"> Clanovi </a>
                 <ul>
-                  <li><Link to="/#"> Timovi <button className="dugmeTimovi" onClick={this.showTimovi}><FontAwesomeIcon icon={faChevronCircleDown} size="1x"/></button></Link>
+                  <li><Link to="/#"> Timovi 
+                    <input type="checkbox" id="check1" onClick={this.showTimovi}
+                                  defaultChecked={this.props.complete}/>
+                    <label for="check1">
+                      pritisni                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+                    </label>
+                  </Link>
                     <ul className="padajuciTimovi" id="padajuciTimovi">
-                      <li><Link to="/#"> Tim 1 </Link></li>
-                      <li><Link to="/#"> Tim 2 </Link></li>
-                      <li><Link to="/#"> Tim 3 </Link></li>
-                      <li><Link to="/#"> Tim 4 </Link></li>
+                      <li><Link to="/#"> Tim za komunikacije </Link></li>
+                      <li><Link to="/#"> Tim za upravljanje projektima </Link></li>
+                      <li><Link to="/#"> Tim za sponzorstva i prodaju </Link></li>
+                      <li><Link to="/#"> Tim za ljudske resurse </Link></li>
                     </ul>
                   </li>
                   <li><Link to="/#"> Alumni </Link></li>
