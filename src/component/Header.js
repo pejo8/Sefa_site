@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/Header.css';
 import { Link } from 'react-router-dom';
-import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faTimes , faChevronCircleDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Header extends Component {
@@ -25,6 +25,15 @@ class Header extends Component {
     let cb = document.getElementById('check');
     cb.checked = '';
 
+  }
+
+  showTimovi({target}) {
+    let nb = document.getElementById('padajuciTimovi');
+    if (target.checked){
+      nb.style.display = "block";
+    } else {
+      nb.style.display = "none";
+    }
   }
 
   render(){
@@ -54,7 +63,7 @@ class Header extends Component {
         <div className="NB_css">
           <ul>
             <li><a href="/oNama"> O nama </a></li>
-            <li><a href="/#"> Projekti </a>
+            <li><a href="/#"> Projekti <FontAwesomeIcon icon={faChevronCircleDown} className="fi_menu"/> </a>
               <ul>
                 <li><Link to="/#"> Repsus </Link></li>
                 <li><Link to="/#"> prava stvar </Link></li>
@@ -64,14 +73,14 @@ class Header extends Component {
               </ul>
             </li>
             <div>
-              <li className="li_clanovi"><a href="/timovi" className="nsk"> Clanovi </a>
+              <li className="li_clanovi"><a href="/timovi" className="nsk"> Clanovi <FontAwesomeIcon icon={faChevronCircleDown} className="fi_menu"/> </a>
                 <ul>
-                  <li><Link to="/#"> Timovi </Link>
+                  <li><Link to="/#"> Timovi <FontAwesomeIcon icon={faChevronCircleDown} className="fi_menu"/> </Link>
                     <ul>
-                      <li><Link to="/#"> Tim1 </Link></li>
-                      <li><Link to="/#"> Tim2 </Link></li>
-                      <li><Link to="/#"> Tim3 </Link></li>
-                      <li><Link to="/#"> Tim4 </Link></li>
+                      <li><Link to="/#"> Tim za komunikacije </Link></li>
+                      <li><Link to="/#"> Tim za upravljanje projektima </Link></li>
+                      <li><Link to="/#"> Tim za sponzorstva i prodaju </Link></li>
+                      <li><Link to="/#"> Tim za ljudske resurse </Link></li>
                   </ul>
                   </li>
                   <div className="ostatak_clanova">
@@ -113,8 +122,8 @@ class Header extends Component {
             </li>
               <li><a href="/#" className="nsk"> Clanovi </a>
                 <ul>
-                  <li><Link to="/#"> Timovi </Link>
-                    <ul>
+                  <li><Link to="/#"> Timovi <button className="dugmeTimovi" onClick={this.showTimovi}><FontAwesomeIcon icon={faChevronCircleDown} size="1x"/></button></Link>
+                    <ul className="padajuciTimovi" id="padajuciTimovi">
                       <li><Link to="/#"> Tim 1 </Link></li>
                       <li><Link to="/#"> Tim 2 </Link></li>
                       <li><Link to="/#"> Tim 3 </Link></li>
@@ -131,6 +140,8 @@ class Header extends Component {
               <li><a href="/#" className="nsk">Kontakt</a></li>
           </ul>
       </div>
+
+      
     </div>
   );
   }

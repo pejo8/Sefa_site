@@ -1,85 +1,90 @@
 import React from 'react';
-import '../css/Footer.css';
-import { Link } from 'react-router-dom';
+import './../css/Footer.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhone, faEnvelope, faMapPin } from '@fortawesome/free-solid-svg-icons'
 
-function Footer() {
-  return (
-    <div className="footer"> 
-    <div className="center">
-      <div className="links">
-        <h3>SMDMACHINERY</h3>
-        <ul>
-          <li><a href="/#">ABOUT US</a></li>
-          <li><a href="/#">PRODUCTION AND R&amp;D</a></li>
-          <li><a href="/#">AWARDS</a></li>
-          <li><a href="/#">HISTORY</a></li>
-          <li><a href="/#">FACTORIES</a></li>
-          <li><a href="/#">INTERNATIONAL OFFICES</a></li>
-          <li><a href="/#">HUMAN RESOURCES</a></li>
-          <li><a href="/#">PRESS KIT</a></li>
-          <li><a href="/#">WALLPAPERS</a></li>
-        </ul>
-      </div>
-      <div className="links">
-        <h3>PRODUCTS</h3>
-        <ul>
-          <li><a href="/#" className="1" title="">BACKHOE LOADERS<span></span></a></li>
-          <li><a href="/#" className="2" title="">WHEEL EXCAVATORS<span></span></a></li>
-          <li><a href="/#" className="3" title="">CRAWLER EXCAVATORS<span>NEW</span></a></li>
-          <li><a href="/#" className="4" title="">SPECIAL PURPOSE EXCAVATORS<span></span></a></li>
-          <li><a href="/#" className="5" title="">MOTOR GRADERS<span></span></a></li>
-          <li><a href="/#" className="6" title="">WHEEL LOADER<span></span></a></li>
-          <li><a href="/#" className="44" title="">SOIL COMPACTORS<span>NEW</span></a></li>
-        </ul>
-      </div>
-      <div className="links">
-        <h3>AFTER SALES SERVICES</h3>
-        <ul>
-          <li><a href="/#">GENERAL INFORMATION</a></li>
-          <li><a href="/#">SPARE PARTS</a></li>
-          <li><a href="/#">SERVICE</a></li>
-          <li><a href="/#">TECHNICAL TRAINING</a></li>
-        </ul>
-      </div>
-      <div className="links">
-        <h3>CONTACT US</h3>
-        <ul>
-            <li><a href="/#" title="">CONTACT</a></li>
-            <li><a href="/#" title="">SALES OFFICES IN TURKEY</a></li>
-            <li><a href="/#" title="">INTERNATIONAL DEALERS</a></li>
-            <li><a href="/#" title="">CUSTOMER RELATIONS FORM</a></li>
-        </ul>
-      </div>
-      <div className="contact-social">  
-        <div className="social">
-          <h4>SEFA AT SOCIAL MEDIA</h4>
-          <ul>
-            <li><a href="/#" title="Facebook" target="_blank" className="socialLogo">
-              <img src="/logo_facebook.png" alt="facebook"/></a></li>
-            <li><a href="/#" title="Instagram" target="_blank"  className="socialLogo">
-              <img src="/logo_instagram.png" alt="instagram"/></a></li>
-            <li><a href="/#" title="Youtube" target="_blank"  className="socialLogo">
-              <img src="/logo_youtube.png" alt="Youtube"/></a></li>
-            </ul>
+class Footer extends React.Component {
+
+  render() {
+    return (
+      <div className="Footer1">
+          <div className="gornji_deo">
+            <div className="sajt_footer">
+                <p> Sajt </p>
+                <ul>
+                    <li><a href="/oNama"> O nama </a></li>
+                    <li><a href="/oNama"> Projekti </a></li>
+                    <li><a href="/oNama"> Clanovi </a></li>
+                    <li><a href="/oNama"> Partneri </a></li>
+                    <li><a href="/oNama"> Magazin </a></li>
+                    <li><a href="/oNama"> Kontakt </a></li>
+                </ul>
+            </div>
+            <div className="sajt_footer">
+                <p> Projekti </p>
+                <ul>
+                    <li><a href="/oNama"> Repsus </a></li>
+                    <li><a href="/oNama"> Prava stvar </a></li>
+                    <li><a href="/oNama"> Ekof u pokretu </a></li>
+                    <li><a href="/oNama"> Sport business day </a></li>
+                    <li><a href="/oNama"> Bez straha </a></li>
+                </ul>
+            </div>
+            <div className="sajt_footer">
+                <p> Clanovi </p>
+                <ul>
+                    <li><a href="/oNama"> Timovi </a></li>
+                    <li><a href="/oNama"> Alumni </a></li>
+                    <li><a href="/oNama"> Savetodavni tim </a></li>
+                    <li><a href="/oNama"> Budi deo Sefe </a></li>
+                </ul>
+            </div>
+            <div className="sajt_footer">
+                <p> Timovi </p>
+                <ul>
+                    <li><a href="/oNama"> Komunikacije  </a></li>
+                    <li><a href="/oNama"> Upravljanje projektima </a></li>
+                    <li><a href="/oNama"> Sponzorstva i prodaja </a></li>
+                    <li><a href="/oNama"> Ljudski resursi </a></li>
+                </ul>
+            </div>
+            <div className="kontakt_footer">
+                <p> Kontakt </p>
+                <div className="icons_kontakt_footer"> <FontAwesomeIcon icon={faPhone} className="icon_fi_footer"/>
+                    <div> +381 63 1521141 </div>
+                </div>
+                <div className="icons_kontakt_footer"> <FontAwesomeIcon icon={faEnvelope} className="icon_fi_footer" />
+                    <div> sefa.ekof@gmail.com </div>
+                </div>
+                <div className="icons_kontakt_footer"> <FontAwesomeIcon icon={faMapPin} className="icon_fi_footer"/>
+                    <div> Kamenicka 6, Beograd </div>
+                </div>
+                <div className="mreze_footer">
+                    <button> <img src="/logo_facebook.png" alt="logo" /> </button>
+                    <button> <img src="/logo_instagram.png" alt="logo" /> </button>
+                    <button> <img src="/logo_youtube.png" alt="logo" /> </button>
+                    <button> <img src="/logo_linkedin.png" alt="logo" /> </button>
+                </div>
+            </div>
+        </div>
+
+        <div className="footer_responsive">
+            <div> Sefa na drustvenim mrezama </div>
+            <div className="mreze_footer">
+                    <button> <img src="/logo_facebook.png" alt="logo" /> </button>
+                    <button> <img src="/logo_instagram.png" alt="logo" /> </button>
+                    <button> <img src="/logo_youtube.png" alt="logo" /> </button>
+                    <button> <img src="/logo_linkedin.png" alt="logo" /> </button>
+            </div>
+        </div>
+
+        <div className="logo_footer">
+            <div> <img src="./logo1.png" alt="logo" /> </div>
         </div>
       </div>
-      <div className="clear"></div>
-      <div className="copyright">
-        <div className="copyright-links">   
-          <Link to="/useAgreement"> Use Agreement</Link>
-          <Link to="/cookiePolicy"> Cookie Policy</Link>
-        </div>
-        <div className="logo">
-          <a href="/#" title="">
-            <img src="/logo.png" alt=""/></a>
-        </div>
-        <p id="cr">Copyright © 2020, All Rights Reserved</p>
-        <br/>
-      </div>
-    </div>
-    <div className="clear"></div>
-    </div>
-  );
+      );
+  }
+
 }
-export default Footer;
 
+export default Footer;
