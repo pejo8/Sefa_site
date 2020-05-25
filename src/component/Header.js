@@ -70,18 +70,18 @@ class Header extends Component {
             <li><a href="/#"> Projekti <FontAwesomeIcon icon={faChevronCircleDown} className="fi_menu"/> </a>
               <ul>
                 <li><Link to="/#"> Repsus </Link></li>
-                <li><Link to="/#"> prava stvar </Link></li>
+                <li><Link to="/pravaStvar"> prava stvar </Link></li>
                 <li><Link to="/#"> ekof u pokretu </Link></li>
                 <li><Link to="/#"> sport business day </Link></li>
                 <li><Link to="/#"> bez straha </Link></li>
               </ul>
             </li>
             <div>
-              <li className="li_clanovi"><a href="/timovi" className="nsk"> Clanovi <FontAwesomeIcon icon={faChevronCircleDown} className="fi_menu"/> </a>
+              <li className="li_clanovi"><a href="/#" className="nsk"> Clanovi <FontAwesomeIcon icon={faChevronCircleDown} className="fi_menu"/> </a>
                 <ul>
                   <li><Link to="/#"> Timovi <FontAwesomeIcon icon={faChevronCircleDown} className="fi_menu"/> </Link>
                     <ul>
-                      <li><Link to="/#"> Tim za komunikacije </Link></li>
+                      <li><Link to="/timovi"> Tim za komunikacije </Link></li>
                       <li><Link to="/#"> Tim za upravljanje projektima </Link></li>
                       <li><Link to="/#"> Tim za sponzorstva i prodaju </Link></li>
                       <li><Link to="/#"> Tim za ljudske resurse </Link></li>

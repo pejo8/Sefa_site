@@ -7,6 +7,7 @@ import Partneri from './component/Partneri';
 import Magazin from './component/Magazin';
 import Kontakt from './component/Kontakt';
 import Timovi from './component/Timovi';
+import PravaStvar from './component/PravaStvar';
 
 class App extends React.Component {
 
@@ -29,6 +30,7 @@ class App extends React.Component {
           <Route path="/magazin" exact component={Magazin} />
           <Route path="/kontakt" exact component={Kontakt} />
           <Route path="/timovi" exact component={Timovi} />
+          <Route path="/pravaStvar" exact component={PravaStvar} />
         </Switch>
       </BrowserRouter>
     );

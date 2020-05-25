@@ -176,11 +176,12 @@
     }
 
     .partneri .partneri_tekst .tekst_nasi{
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .partneri .partneri_tekst .tekst_partneri{
-        font-size: 22px;
+        font-size: 18px;
+        margin-top: -25px;
     }    
 
     /* .partneri .partneri_logovi {
