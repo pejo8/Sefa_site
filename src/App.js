@@ -8,19 +8,12 @@ import Magazin from './component/Magazin';
 import Kontakt from './component/Kontakt';
 import Timovi from './component/Timovi';
 import PravaStvar from './component/PravaStvar';
+import Projekat from './component/Projekat';
+import SportBusinessDay from './component/SportBusinessDay';
 
 class App extends React.Component {
 
   render() {
-    // window.onblur=function(){
-    //   let favicon = this.document.getElementById("favicon");
-    //   favicon.href = "/beliLogo.png";
-    // }
-    
-    // window.onfocus=function(){
-    //   let favicon = this.document.getElementById("favicon");
-    //   favicon.href = "/logo.png";
-    // }
     return (
       <BrowserRouter>
         <Switch>
@@ -31,6 +24,8 @@ class App extends React.Component {
           <Route path="/kontakt" exact component={Kontakt} />
           <Route path="/timovi" exact component={Timovi} />
           <Route path="/pravaStvar" exact component={PravaStvar} />
+          <Route path="/projekat" exact component={Projekat} />
+          <Route path="/SportBusinessDay" exact component={SportBusinessDay} />
         </Switch>
       </BrowserRouter>
     );

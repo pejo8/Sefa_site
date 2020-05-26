@@ -1,0 +1,99 @@
+.middle_projekti {
+    width: 100%;
+    background-image: url("/Pozadina.jpg");
+    background-attachment: fixed;
+    margin: 0;
+    padding: 50px 0 80px 0;
+}
+.slider_img {
+    display: flex;
+    margin-left: 5.6%;
+}
+
+.slider_img .img1{
+    border: 0;
+    width: 30%;
+    height: 300px;
+    background: url("/1.jpg");
+    background-size: 100%;
+    animation: slideImg1 15s infinite;
+}
+
+.slider_img .img2{
+    border: 0;
+    width: 30%;
+    margin-left: 1%;
+    background: url("/2.jpg");
+    background-size: 100%;
+    animation: slideImg2 15s infinite;
+}
+
+.slider_img .img3{
+    border: 0;
+    margin-left: 1%;
+    width: 30%;
+    background: url("/3.jpg");
+    background-size: 100%;
+    animation: slideImg3 15s infinite;
+}
+.tekstProjekti {
+    /* text-align: center; */
+    color:white;
+    margin-left: 10%;
+    padding-bottom: 5%;
+    font-size: 18px;
+    width: 80%;
+}
+#repsusTekst {
+    color:#71cbc9;
+}
+
+.banerSPD {
+    width: 100%;
+    padding-top: 5%;
+}
+
+@keyframes slideImg1 {
+    33% {
+        background: url("/2.jpg");
+        background-size: 100%;
+    }
+    66% {
+        background: url("/3.jpg");
+        background-size: 100%;
+    }
+    100% {
+        background: url("/1.jpg");
+        background-size: 100%;
+    }
+}
+
+@keyframes slideImg2 {
+    33% {
+        background: url("/3.jpg");
+        background-size: 100%;
+    }
+    66% {
+        background: url("/1.jpg");
+        background-size: 100%;
+    }
+    100% {
+        background: url("/2.jpg");
+        background-size: 100%;
+    }
+}
+
+@keyframes slideImg3 {
+    33% {
+        background: url("/1.jpg");
+        background-size: 100%;
+    }
+    66% {
+        background: url("/2.jpg");
+        background-size: 100%;
+    }
+    100% {
+        background: url("/3.jpg");
+        background-size: 100%;
+    }
+}
