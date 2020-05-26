@@ -22,7 +22,7 @@
 
 .header .logo_header button img{
     width: 100%;
-    height: 77px;
+    padding-top: 7%;
 }
 
 .header .desno_header {
@@ -111,7 +111,13 @@
 .NB_css ul li ul li:hover ul {
     display: block;
 }
+.timoviTekst {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
 
+}
 .NB_response {
     position: absolute;
     background: black;
@@ -141,10 +147,13 @@
     text-transform: uppercase;
     text-decoration: none;
 }
-
+#checkboxTimovi{
+    display: none;
+}
 .NB_response ul li ul {
     display: block;
     margin-top: 12px;
+    padding-left: 0px;
 }
 
 .NB_response ul li ul li {
@@ -201,6 +210,13 @@
 
 @media (max-width: 850px){    
 
+    .timoviTekst {
+        color: white;
+        font-size: 12px;
+        margin-left: 10px;
+        text-transform: uppercase;
+    
+    }
     .header {
         grid-template-columns: none;
     }

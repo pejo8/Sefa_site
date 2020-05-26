@@ -69,10 +69,10 @@ class Header extends Component {
             <li><a href="/oNama"> O nama </a></li>
             <li><a href="/#"> Projekti <FontAwesomeIcon icon={faChevronCircleDown} className="fi_menu"/> </a>
               <ul>
-                <li><Link to="/#"> Repsus </Link></li>
+                <li><Link to="/projekat"> Repsus </Link></li>
                 <li><Link to="/#"> prava stvar </Link></li>
                 <li><Link to="/#"> ekof u pokretu </Link></li>
-                <li><Link to="/#"> sport business day </Link></li>
+                <li><Link to="/SportBusinessDay"> sport business day </Link></li>
                 <li><Link to="/#"> bez straha </Link></li>
               </ul>
             </li>
@@ -124,15 +124,13 @@ class Header extends Component {
                 <li><Link to="/#"> bez straha </Link></li>
               </ul>
             </li>
-              <li><a href="/#" className="nsk"> Clanovi </a>
+              <li><a href="/#" className="nsk"> Članovi </a>
                 <ul>
-                  <li><Link to="/#"> Timovi 
-                    <input type="checkbox" id="check1" onClick={this.showTimovi}
-                                  defaultChecked={this.props.complete}/>
-                    <label for="check1">
-                      pritisni                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+                  <li>
+                    <label className="timoviTekst">
+                      <input type="checkbox" id="checkboxTimovi" onClick={this.showTimovi} defaultChecked={this.props.complete}/><span>Timovi </span> 
+                      <FontAwesomeIcon icon={faChevronCircleDown} className="fi_menu"/>
                     </label>
-                  </Link>
                     <ul className="padajuciTimovi" id="padajuciTimovi">
                       <li><Link to="/#"> Tim za komunikacije </Link></li>
                       <li><Link to="/#"> Tim za upravljanje projektima </Link></li>
