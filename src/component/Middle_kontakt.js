@@ -10,19 +10,19 @@ class Middle_kontakt extends React.Component {
     return (
       <div className="middle_kontakt">
 
-        <div className="kontaktirajte_nas"> <p1> KONTAKTIRAJTE NAS </p1> </div>
+        <div className="kontaktirajte_nas"> <p> KONTAKTIRAJTE NAS </p> </div>
 
         <div className="kontakt_fi">
             <div className="icons_kontakt"> <FontAwesomeIcon icon={faPhone} className="icon_fi"/>
-                <div1> TELEFON </div1>
+                <div className="kontaktiTekst"> TELEFON </div>
                 <div> <p>+381 63 1521141</p> </div>
             </div>
             <div className="icons_kontakt"> <FontAwesomeIcon icon={faEnvelope} className="icon_fi" />
-                <div1> EMAIL </div1>
+                <div className="kontaktiTekst"> EMAIL </div>
                 <div> sefa.ekof@gmail.com </div>
             </div>
             <div className="icons_kontakt"> <FontAwesomeIcon icon={faMapPin} className="icon_fi" />
-                <div1> ADRESA </div1>
+                <div className="kontaktiTekst"> ADRESA </div>
                 <div> Kamenicka 6, Beograd </div>
             </div>
         </div>

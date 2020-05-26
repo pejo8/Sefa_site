@@ -5,7 +5,7 @@ class Middle_SportBusinessDay extends Component {
 
     render(){
         return (
-            <div className="middle_projekti">
+            <div className="Middle_SportBusinessDay">
                 <img src="/SBDlogo.png" className="repsus" alt="repsus"/>
                 
                 <div className="tekstProjekti">
@@ -26,7 +26,7 @@ class Middle_SportBusinessDay extends Component {
                 <div className="img3">
                 </div>
                 </div>
-                <img src="/Baner.jpg" className="banerSPD" alt="" />
+                {/* <img src="/Baner.jpg" className="banerSPD" alt="" /> */}
             </div>
         );
     }

@@ -8,16 +8,16 @@ import ReactPlayer from "react-player";
 var image = ["februar 2016/1.jpg","februar 2016/2.jpg","februar 2016/3.jpg"
             ,"februar 2016/4.jpg","februar 2016/5.jpg","februar 2016/6.jpg"];
 var i = image.length;
-var slider_content = [<a href="/"> <img src= {image[i-1]} alt='project' /> </a>];
+var slider_content = [<a key={i} href="/"> <img src= {image[i-1]} alt='project' /> </a>];
 
 var image1 = ["novembar 2017/1.jpg","novembar 2017/2.jpg","novembar 2017/3.jpg",
               "novembar 2017/4.jpg","novembar 2017/5.jpg","novembar 2017/6.jpg","novembar 2017/7.jpg"];
 var i1 = image1.length;
-var slider_content1 = [<a href="/"> <img src= {image1[i1-1]} alt='project' /> </a>];
+var slider_content1 = [<a key={i} href="/"> <img src= {image1[i1-1]} alt='project' /> </a>];
 
 var image2 = ["april 2019/1.JPG","april 2019/2.JPG","april 2019/3.JPG"];
 var i2 = image2.length;
-var slider_content2 = [<a href="/"> <img src= {image2[i2-1]} alt='project' /> </a>];
+var slider_content2 = [<a key={i} href="/"> <img src= {image2[i2-1]} alt='project' /> </a>];
 
 class PravaStvar_middle extends React.Component {
 
@@ -144,10 +144,10 @@ class PravaStvar_middle extends React.Component {
                     <div id="box">
                         {slider_content}
                     </div>
-                    <button class="prew" onClick={this.prewImage.bind(this)}> {"<"} </button>
-                    <button class="next" onClick={this.nextImage.bind(this)}> > </button>
+                    <button className="prew" onClick={this.prewImage.bind(this)}> {"<"} </button>
+                    <button className="next" onClick={this.nextImage.bind(this)}> > </button>
                 </div>
-                <p1> GOST </p1>
+                <p className="gost"> GOST </p>
                 <p> Sergej Trifunović </p>
             </div>
                 <div className="pravaStvar_gost">
@@ -156,10 +156,10 @@ class PravaStvar_middle extends React.Component {
                         <div id="box">
                             {slider_content1}
                         </div>
-                        <button class="prew" onClick={this.prewImage1.bind(this)}> {"<"} </button>
-                        <button class="next" onClick={this.nextImage1.bind(this)}> > </button>
+                        <button className="prew" onClick={this.prewImage1.bind(this)}> {"<"} </button>
+                        <button className="next" onClick={this.nextImage1.bind(this)}> > </button>
                     </div>
-                    <p1> GOST </p1>
+                    <p className="gost"> GOST </p>
                     <p> Neša Bridžis </p>
             </div>
             <div className="pravaStvar_gost">
@@ -168,10 +168,10 @@ class PravaStvar_middle extends React.Component {
                         <div id="box">
                             {slider_content2}
                         </div>
-                        <button class="prew" onClick={this.prewImage2.bind(this)}> {"<"} </button>
-                        <button class="next" onClick={this.nextImage2.bind(this)}> > </button>
+                        <button className="prew" onClick={this.prewImage2.bind(this)}> {"<"} </button>
+                        <button className="next" onClick={this.nextImage2.bind(this)}> > </button>
                     </div>
-                    <p1> GOST </p1>
+                    <p className="gost"> GOST </p>
                     <p> Vlado Georgijev </p>
                     <p> Dejan Savić </p>
             </div>

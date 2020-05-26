@@ -41,12 +41,12 @@ Partneri konferencije bile su brojne kompanije poput:<br/>
 <li>Ekonomski fakultet, Ball, Silbo, Frikom, Nectar, Booster, Heba, Munchmallow, GDI – 2019.</li>
 </ul>
 </div>
-                <div className="slider_img">
-                <div className="img1">
+                <div className="slider_img_repsus">
+                <div className="img1_repsus">
                 </div>
-                <div className="img2">
+                <div className="img2_repsus">
                 </div>
-                <div className="img3">
+                <div className="img3_repsus">
                 </div>
                 </div>
             </div>

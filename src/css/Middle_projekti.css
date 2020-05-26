@@ -5,36 +5,36 @@
     margin: 0;
     padding: 50px 0 80px 0;
 }
-.slider_img {
+.slider_img_repsus {
     display: flex;
     margin-left: 5.6%;
 }
 
-.slider_img .img1{
+.slider_img_repsus .img1_repsus{
     border: 0;
     width: 30%;
     height: 300px;
     background: url("/repsus1.jpg");
     background-size: 100%;
-    animation: slideImg1 15s infinite;
+    animation: slideImg1_repsus 15s infinite;
 }
 
-.slider_img .img2{
+.slider_img_repsus .img2_repsus{
     border: 0;
     width: 30%;
     margin-left: 1%;
     background: url("/repsus2.jpg");
     background-size: 100%;
-    animation: slideImg2 15s infinite;
+    animation: slideImg2_repsus 15s infinite;
 }
 
-.slider_img .img3{
+.slider_img_repsus .img3_repsus{
     border: 0;
     margin-left: 1%;
     width: 30%;
     background: url("/repsus3.jpg");
     background-size: 100%;
-    animation: slideImg3 15s infinite;
+    animation: slideImg3_repsus 15s infinite;
 }
 .tekstProjekti {
     /* text-align: center; */
@@ -53,7 +53,7 @@
     margin-left: 40%;
     padding-bottom: 2%;
 }
-@keyframes slideImg1 {
+@keyframes slideImg1_repsus {
     33% {
         background: url("/repsus2.jpg");
         background-size: 100%;
@@ -68,7 +68,7 @@
     }
 }
 
-@keyframes slideImg2 {
+@keyframes slideImg2_repsus {
     33% {
         background: url("/repsus3.jpg");
         background-size: 100%;
@@ -83,7 +83,7 @@
     }
 }
 
-@keyframes slideImg3 {
+@keyframes slideImg3_repsus {
     33% {
         background: url("/repsus1.jpg");
         background-size: 100%;
