@@ -1,0 +1,132 @@
+.middle_pravaStvar {
+    background-image: url("/background-Dark-Grey.jpg");
+    margin: 0;
+    padding: 50px 0 70px 0;
+    text-align: center;
+    color: white;
+}
+
+.middle_pravaStvar p {
+    margin-bottom: 0;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.middle_pravaStvar .pasus{
+    padding: 50px 15% 50px 15%;
+}
+
+.middle_pravaStvar .pravaStvar_video {
+    display: flex;
+    width: 70%;
+    margin: 0 13% 0 13%;
+}
+
+.pravaStvar_baner {
+    margin: 40px 0 70px 0;
+}
+
+.pravaStvar_baner img{
+    border-top: 1px solid #71cbc9;
+    border-bottom: 1px solid #71cbc9;
+    width: 100%;
+}
+
+.pravaStvar_gosti {
+    display: flex;
+    width: 100%;
+}
+
+.pravaStvar_gosti .pravaStvar_gost{
+    width: 28.333%;
+    margin-left: 3.75%;
+    -webkit-box-shadow: 3px 0px 37px 3px rgba(113,203,201,1);
+    -moz-box-shadow: 3px 0px 37px 3px rgba(113,203,201,1);
+    box-shadow: 3px 0px 37px 3px rgba(113,203,201,1);
+    padding-top: 15px;
+    border-radius: 5%;
+}
+
+.pravaStvar_gosti .pravaStvar_slider{
+    border: none;
+    width: 96%;
+    margin: 10px 2% 10px 2%;
+    position: relative;
+    border: 1px solid #71cbc9;
+}
+
+.pravaStvar_gosti div .pravaStvar_slider img{
+    width: 100%;
+    border: none;
+}
+
+.pravaStvar_gosti div p{
+    font-size: 22px;
+}
+
+.pravaStvar_gosti div p1{
+    font-size: 16px;
+    color: #71cbc9;
+}
+
+.pravaStvar_gosti .pravaStvar_slider button {
+    border: none;
+    background-image: url("/background-Dark-Grey.jpg");
+    font-size: 22px;
+    position: absolute;
+    top: 40%;
+    color: white;
+    cursor: pointer;
+    opacity: 70%;
+}
+
+.pravaStvar_gosti .pravaStvar_slider .prew {
+    left: 0;
+    border-radius: 0px 10px 10px 0;
+}
+
+.pravaStvar_gosti .pravaStvar_slider .next {
+    right: 0%;
+    border-radius: 10px 0 0 10px;
+}
+
+@media (max-width: 850px){
+    .middle_pravaStvar p{
+        font-size: 35px;
+    }
+
+    .middle_pravaStvar .pasus{
+        padding: 50px 5% 50px 5%;
+        font-size: 13px;
+    }
+    
+    .pravaStvar_baner {
+        margin: 0 0 70px 0;
+    }
+
+    .pravaStvar_gosti {
+        display: block;
+        width: 100%;
+    }
+
+    .pravaStvar_gosti .pravaStvar_gost {
+        width: 90%;
+        margin-bottom: 40px;
+        margin-left: 5%;
+    }
+
+    .pravaStvar_gosti .pravaStvar_slider{
+        margin-top: 10px;
+    }
+
+    .middle_pravaStvar .pravaStvar_video {
+        display: block;
+        width: 70%;
+        margin: 0 13% 0 13%;
+    }
+
+    .middle_pravaStvar .pravaStvar_video div {
+        width: 80%;
+    }
+}
