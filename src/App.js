@@ -10,6 +10,7 @@ import Timovi from './component/Timovi';
 import PravaStvar from './component/PravaStvar';
 import Projekat from './component/Projekat';
 import SportBusinessDay from './component/SportBusinessDay';
+import EkofUPokretu from './component/EkofUPokretu'
 
 class App extends React.Component {
 
@@ -26,6 +27,7 @@ class App extends React.Component {
           <Route path="/pravaStvar" exact component={PravaStvar} />
           <Route path="/projekat" exact component={Projekat} />
           <Route path="/SportBusinessDay" exact component={SportBusinessDay} />
+          <Route path="/ekofUPokretu" exact component={EkofUPokretu} />
         </Switch>
       </BrowserRouter>
     );
