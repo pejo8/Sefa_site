@@ -10,13 +10,19 @@
     margin-left: 5.6%;
 }
 
+.slider_img div {
+    -webkit-box-shadow: 3px 0px 37px 3px rgba(113,203,201,1);
+    -moz-box-shadow: 3px 0px 37px 3px rgba(113,203,201,1);
+    box-shadow: 3px 0px 37px 3px rgba(113,203,201,1);
+}
+
 .slider_img .img1{
     border: 0;
     width: 30%;
-    height: 300px;
     background: url("/1.jpg");
     background-size: 100%;
     animation: slideImg1 15s infinite;
+    padding-top: 19.946808511%;
 }
 
 .slider_img .img2{
@@ -29,7 +35,6 @@
 }
 
 .slider_img .img3{
-    border: 0;
     margin-left: 1%;
     width: 30%;
     background: url("/3.jpg");

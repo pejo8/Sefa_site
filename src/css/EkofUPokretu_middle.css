@@ -1,0 +1,194 @@
+.middle_ekofUPokretu {
+    background-image: url("/background-Dark-Grey.jpg");
+    margin: 0;
+    padding: 50px 0 70px 0;
+    text-align: center;
+    color: white;
+}
+
+.middle_ekofUPokretu .naslov_eup{
+    width: 23%;
+}
+
+.middle_ekofUPokretu .tekst{
+    padding: 50px 15% 50px 15%;
+    text-align: left;
+}
+
+.middle_ekofUPokretu .ikonice{
+    width: 15%;
+    margin: 0 0 100px 42.5%;
+}
+
+.middle_ekofUPokretu .ikonice button{
+    width: 40%;
+    border-radius: 50%;
+    border: 1px solid #71cbc9;
+    background-color: black;
+    margin-right: 10%;
+}
+
+.middle_ekofUPokretu .ikonice button:hover{
+    border: 2px solid #71cbc9;
+    -webkit-box-shadow: 3px 0px 37px 3px rgba(113,203,201,1);
+    -moz-box-shadow: 3px 0px 37px 3px rgba(113,203,201,1);
+    box-shadow: 3px 0px 37px 3px rgba(113,203,201,1);
+}
+
+.middle_ekofUPokretu .ikonice button img{
+    width: 100%;
+    border: 0;
+}
+
+.middle_ekofUPokretu .destinacija {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 90%;
+    margin: 0 0 50px 5%;
+    text-align: left;
+    -webkit-box-shadow: 3px 0px 37px 3px rgba(113,203,201,1);
+    -moz-box-shadow: 3px 0px 37px 3px rgba(113,203,201,1);
+    box-shadow: 3px 0px 37px 3px rgba(113,203,201,1);
+    padding: 15px;
+}
+
+.middle_ekofUPokretu .destinacija p{
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.middle_ekofUPokretu .destinacije .aftermovie{
+    text-align: left;
+    margin-left: 7%;
+    margin-top: -110px;
+    font-size: 20px;
+    position: absolute;
+    color: #71cbc9;
+}
+
+.middle_ekofUPokretu .destinacije .aftermovie button{
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid #71cbc9;
+    background-color: black;
+    margin-right: 10px;
+}
+
+.middle_ekofUPokretu .destinacije .aftermovie button img{
+    width: 100%;
+}
+
+.middle_ekofUPokretu .destinacije .aftermovie button:hover {
+    border: 2px solid #71cbc9;
+    -webkit-box-shadow: 3px 0px 37px 3px rgba(113,203,201,1);
+    -moz-box-shadow: 3px 0px 37px 3px rgba(113,203,201,1);
+    box-shadow: 3px 0px 37px 3px rgba(113,203,201,1);
+}
+
+.middle_ekofUPokretu .destinacija .destinacija_slider{
+    border: none;
+    margin: 10px 2% 10px 2%;
+    position: relative;
+    grid-column: 2;
+}
+
+.middle_ekofUPokretu .destinacija .destinacija_slider img{
+    width: 100%;
+    border: none;
+}
+
+.middle_ekofUPokretu .destinacija .destinacija_slider button {
+    border: none;
+    background-image: url("/background-Dark-Grey.jpg");
+    font-size: 22px;
+    position: absolute;
+    top: 45%;
+    color: white;
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.middle_ekofUPokretu .destinacija .destinacija_slider .prew {
+    left: 0;
+    border-radius: 0px 10px 10px 0;
+}
+
+.middle_ekofUPokretu .destinacija .destinacija_slider .next {
+    right: 0%;
+    border-radius: 10px 0 0 10px;
+}
+
+@media (max-width: 1120px){
+    .middle_ekofUPokretu .destinacija p{
+        padding-bottom: 0;
+    }
+
+    .middle_ekofUPokretu .destinacija{
+        font-size: 12px;
+    }
+
+    .middle_ekofUPokretu .ikonice{
+        width: 20%;
+        margin: 0 0 100px 42.5%;
+    }
+}
+
+@media (max-width: 980px){
+    .middle_ekofUPokretu .destinacija p{
+        font-size: 18px;
+    }
+
+    .middle_ekofUPokretu .destinacije .aftermovie{
+        font-size: 14px;
+        margin-top: -90px;
+    }
+}
+
+@media (max-width: 900px){
+    .middle_ekofUPokretu .destinacija p{
+        font-size: 15px;
+    }
+
+    .middle_ekofUPokretu .destinacija{
+        font-size: 11.5px;
+    }
+
+    .middle_ekofUPokretu .ikonice{
+        width: 25%;
+        margin: 0 0 100px 42.5%;
+    }
+}
+
+@media (max-width: 850px){
+
+    .middle_ekofUPokretu .tekst{
+        font-size: 13px;
+        padding: 10%;
+        text-align: justify;
+    }
+
+    .middle_ekofUPokretu .naslov_eup{
+        width: 45%;
+    }
+
+    .middle_ekofUPokretu .ikonice{
+        width: 45%;
+        margin-left: 32.5%;
+        margin-bottom: 50px;
+    }
+
+    .middle_ekofUPokretu .destinacija{
+        display: block;
+    }
+
+    .middle_ekofUPokretu .destinacija{
+        padding-bottom: 50px;
+        text-align: justify;
+    }
+
+    .middle_ekofUPokretu .destinacije .aftermovie{
+        width: 80%;
+        text-align: center;
+    }
+}

@@ -71,7 +71,7 @@ class Header extends Component {
               <ul>
                 <li><Link to="/pravaStvar"> prava stvar </Link></li>
                 <li><Link to="/projekat"> Repsus </Link></li>
-                <li><Link to="/#"> ekof u pokretu </Link></li>
+                <li><Link to="/ekofUPokretu"> ekof u pokretu </Link></li>
                 <li><Link to="/SportBusinessDay"> sport business day </Link></li>
                 <li><Link to="/#"> bez straha </Link></li>
               </ul>

@@ -95,7 +95,7 @@ class PravaStvar_middle extends React.Component {
         <p> PRAVA STVAR </p>
 
         <div className="pasus">
-            <b>Prava Stvar</b> je humanitarni projekat zabavno-edukativnog karaktera koji se 
+            <span id="repsusTekst">Prava stvar</span> je humanitarni projekat zabavno-edukativnog karaktera koji se 
             realizuje sa ciljem podizanja svesti mladih o humanosti i prikupljanju 
             sredstava za one kojima je to najpotrebnije.
         </div>
