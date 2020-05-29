@@ -51,7 +51,7 @@ class Header extends Component {
         <div className="logo_header">
           <button >
           <Link to="/" >
-            <img src="./logo1.png" alt="logo" />
+            <img src="./logo4.png" alt="logo" />
           </Link>
           </button>
         </div>

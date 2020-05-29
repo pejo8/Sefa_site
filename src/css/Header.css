@@ -21,8 +21,8 @@
 }
 
 .header .logo_header button img{
-    width: 100%;
-    padding-top: 7%;
+    width: 130px;
+    /* padding-top: 7%; */
 }
 
 .header .desno_header {
@@ -221,6 +221,11 @@
         grid-template-columns: none;
     }
 
+    .header .logo_header button img{
+        width: 130px;
+        padding-top: 0%;
+    }
+
     .NB_response ul li ul li .padajuciTimovi {
         display: none;
     }
@@ -333,6 +338,11 @@
         width: 39px;
         height: 41px;
     }
+
+    .header .logo_header button img{
+        width: 100px;
+        padding-top: 10%;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -340,11 +350,25 @@
         width: 35px;
         height: 41px;
     }
+    .header .logo_header button img{
+        width: 100px;
+        padding-top: 10%;
+    }
 }
 
 @media (max-width: 900px) {
     .header .desno_header button {
         width: 33px;
         height: 41px;
+    }
+    .header .logo_header button img{
+        width: 100px;
+        padding-top: 10%;
+    }
+}
+@media (max-width: 849px) {
+    .header .logo_header button img{
+        width: 130px;
+        padding-top: 0%;
     }
 }
