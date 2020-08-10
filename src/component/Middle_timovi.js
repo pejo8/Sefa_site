@@ -9,7 +9,7 @@ class Middle_timovi extends React.Component {
           
           <div className="naslov_timovi">
               <div1> </div1>
-              <div> KOMUNIKACIJE </div>
+              <div> {this.props.title} </div>
               <div1> </div1>
           </div>
 
@@ -17,7 +17,6 @@ class Middle_timovi extends React.Component {
               <div className="clan_t"> 
                   <div> <img src="/proba.jpg" alt="clan" /> </div>
                   <div> Nikola Jovanovic </div>
-                  <div className="tl_clan"> Tim lider </div>
               </div>
               <div className="clan_t"> 
                   <div> <img src="/proba.jpg" alt="clan" /> </div>

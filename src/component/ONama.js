@@ -2,6 +2,7 @@ import React from 'react';
 import './../css/ONama.css';
 import Header from './Header';
 import Footer from './Footer';
+import MiddleONama from './MiddleONama';
 
 class ONama extends React.Component {
 
@@ -9,6 +10,7 @@ class ONama extends React.Component {
     return (
       <div className="ONama">
           <Header />
+          <MiddleONama />
           <Footer />
       </div>
       );

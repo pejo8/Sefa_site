@@ -21,6 +21,7 @@
 .middle_pravaStvar .pasus{
     padding: 50px 15% 50px 15%;
     text-align: left;
+    font-size: 18px;
 }
 
 .middle_pravaStvar .pravaStvar_video {
@@ -37,6 +38,11 @@
     border-top: 1px solid #71cbc9;
     border-bottom: 1px solid #71cbc9;
     width: 100%;
+}
+
+.video {
+    margin-left: 5%;
+    width: 45%;
 }
 
 .pravaStvar_gosti {
@@ -101,10 +107,13 @@
     .middle_pravaStvar p{
         font-size: 35px;
     }
-
+    .video {
+        width: 100%;
+        margin-left: 3%;
+    }
     .middle_pravaStvar .pasus{
         padding: 50px 5% 50px 5%;
-        font-size: 13px;
+        font-size: 15px;
     }
     
     .pravaStvar_baner {
@@ -133,6 +142,6 @@
     }
 
     .middle_pravaStvar .pravaStvar_video div {
-        width: 80%;
+        width: 100%;
     }
 }

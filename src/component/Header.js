@@ -66,46 +66,46 @@ class Header extends Component {
 
         <div className="NB_css">
           <ul>
-            <li><a href="/oNama"> O nama </a></li>
-            <li><a href="/#"> Projekti <FontAwesomeIcon icon={faChevronCircleDown} className="fi_menu"/> </a>
+            <li><Link to="/oNama"> O nama </Link></li>
+            <li id="projekti"> Projekti <FontAwesomeIcon icon={faChevronCircleDown} className="fi_menu"/>
               <ul>
                 <li><Link to="/pravaStvar"> prava stvar </Link></li>
-                <li><Link to="/projekat"> Repsus </Link></li>
+                <li><Link to="/repsus"> Repsus </Link></li>
                 <li><Link to="/ekofUPokretu"> ekof u pokretu </Link></li>
                 <li><Link to="/SportBusinessDay"> sport business day </Link></li>
                 <li><Link to="/#"> bez straha </Link></li>
               </ul>
             </li>
             <div>
-              <li className="li_clanovi"><a href="/#" className="nsk"> Clanovi <FontAwesomeIcon icon={faChevronCircleDown} className="fi_menu"/> </a>
+              <li className="li_clanovi" id="clanovi"> Clanovi <FontAwesomeIcon icon={faChevronCircleDown} className="fi_menu"/>
                 <ul>
                   <li><Link to="/#"> Timovi <FontAwesomeIcon icon={faChevronCircleDown} className="fi_menu"/> </Link>
                     <ul>
                       <li><Link to="/timovi"> Tim za komunikacije </Link></li>
-                      <li><Link to="/#"> Tim za upravljanje projektima </Link></li>
-                      <li><Link to="/#"> Tim za sponzorstva i prodaju </Link></li>
-                      <li><Link to="/#"> Tim za ljudske resurse </Link></li>
+                      <li><Link to="/upravljanjeProjektima"> Tim za upravljanje projektima </Link></li>
+                      <li><Link to="/sponzorstvoIProdaju"> Tim za sponzorstva i prodaju </Link></li>
+                      <li><Link to="/ljudskeResurse"> Tim za ljudske resurse </Link></li>
                   </ul>
                   </li>
                   <div className="ostatak_clanova">
-                    <li><Link to="/#"> Alumni </Link></li>
-                    <li><Link to="/#"> Savetodavno telo </Link></li>
-                    <li><Link to="/#"> Budi deo Sefe </Link></li>
+                    <li><Link to="/alumni"> Alumni </Link></li>
+                    <li><Link to="/savetodavnoTelo"> Savetodavno telo </Link></li>
+                    <li><Link to="/budiDeoSefa"> Budi deo SEFA-e </Link></li>
                   </div>
                 </ul>
               </li>
-              <li><a href="/partneri" className="nsk">Partneri</a></li>
-              <li><a href="/magazin" className="nsk">Magazin</a></li>
-              <li><a href="/kontakt" className="nsk">Kontakt</a></li>
+              <li><Link to="/partneri" className="nsk">Partneri</Link></li>
+              <li><Link to="/magazin" className="nsk">Magazin</Link></li>
+              <li><Link to="/kontakt" className="nsk">Kontakt</Link></li>
             </div>
           </ul>
         </div>
 
         <div className="desno_header">
-          <button> <img src="/logo_facebook.png" alt="logo" /> </button>
-          <button> <img src="/logo_instagram.png" alt="logo" /> </button>
+          <button> <a href="https://www.facebook.com/sefa.org/"><img src="/logo_facebook.png" alt="logo" /></a></button>
+          <button> <a href="https://www.instagram.com/sefa_org/"><img src="/logo_instagram.png" alt="logo" /> </a></button>
           <button> <img src="/logo_youtube.png" alt="logo" /> </button>
-          <button> <img src="/logo_linkedin.png" alt="logo" /> </button>
+          <button> <a href="https://www.linkedin.com/company/sefa-org"> <img src="/logo_linkedin.png" alt="logo" /></a> </button>
         </div>
 
       </div>
@@ -114,13 +114,13 @@ class Header extends Component {
       <button className="dugmeNavBar" onClick={this.exitNb}><FontAwesomeIcon icon={faTimes} color="white" size="3x"/></button>
 
           <ul>
-            <li><a href="/"> O nama </a></li>
+            <li><Link to="/oNama"> O nama </Link></li>
             <li><a href="/#"> Projekti </a>
               <ul>
-                <li><Link to="/#"> Repsus </Link></li>
-                <li><Link to="/#"> prava stvar </Link></li>
-                <li><Link to="/#"> ekof u pokretu </Link></li>
-                <li><Link to="/#"> sport business day </Link></li>
+                <li><Link to="/repsus"> Repsus </Link></li>
+                <li><Link to="/pravaStvar"> prava stvar </Link></li>
+                <li><Link to="/ekofUPokretu"> ekof u pokretu </Link></li>
+                <li><Link to="/SportBusinessDay"> sport business day </Link></li>
                 <li><Link to="/#"> bez straha </Link></li>
               </ul>
             </li>
@@ -132,20 +132,20 @@ class Header extends Component {
                       <FontAwesomeIcon icon={faChevronCircleDown} className="fi_menu"/>
                     </label>
                     <ul className="padajuciTimovi" id="padajuciTimovi">
-                      <li><Link to="/#"> Tim za komunikacije </Link></li>
-                      <li><Link to="/#"> Tim za upravljanje projektima </Link></li>
-                      <li><Link to="/#"> Tim za sponzorstva i prodaju </Link></li>
-                      <li><Link to="/#"> Tim za ljudske resurse </Link></li>
+                      <li><Link to="/timovi"> Tim za komunikacije </Link></li>
+                      <li><Link to="/upravljanjeProjektima"> Tim za upravljanje projektima </Link></li>
+                      <li><Link to="/sponzorstvoIProdaju"> Tim za sponzorstva i prodaju </Link></li>
+                      <li><Link to="/ljudskeResurse"> Tim za ljudske resurse </Link></li>
                     </ul>
                   </li>
-                  <li><Link to="/#"> Alumni </Link></li>
-                  <li><Link to="/#"> Savetodavno telo </Link></li>
-                  <li><Link to="/#"> Budi deo sefe </Link></li>
+                  <li><Link to="/alumni"> Alumni </Link></li>
+                  <li><Link to="/savetodavnoTelo"> Savetodavno telo </Link></li>
+                  <li><Link to="/budiDeoSefa"> Budi deo SEFA-e </Link></li>
                 </ul>
               </li>
               <li><a href="/#" className="nsk">Partneri</a></li>
               <li><a href="/#" className="nsk">Magazin</a></li>
-              <li><a href="/#" className="nsk">Kontakt</a></li>
+              <li><Link to="/kontakt" className="nsk">Kontakt</Link></li>
           </ul>
       </div>
 

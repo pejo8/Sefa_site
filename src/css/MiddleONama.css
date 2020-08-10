@@ -1,0 +1,141 @@
+.middle_onama {
+    width: 100%;
+    background-image: url("/background-Dark-Grey.jpg");
+    background-attachment: fixed;
+    margin: 0;
+    padding: 50px 0 80px 0;
+}
+
+.slider_img_onama {
+    display: flex;
+    margin-left: 5.6%;
+}
+
+.onama_response {
+    display: none;
+}
+
+.slider_img_onama div {
+    -webkit-box-shadow: 3px 0px 37px 3px rgba(113,203,201,1);
+    -moz-box-shadow: 3px 0px 37px 3px rgba(113,203,201,1);
+    box-shadow: 3px 0px 37px 3px rgba(113,203,201,1);
+}
+
+.slider_img_onama .img1_onama{
+    border: 0;
+    width: 30%;
+    background: url("/Onama1.jpg");
+    background-size: 100%;
+    animation: slideImg1_onama 25s infinite;
+    padding-top: 19.84375%;
+}
+
+.slider_img_onama .img2_onama{
+    border: 0;
+    width: 30%;
+    margin-left: 1%;
+    background: url("/Onama2.jpg");
+    background-size: 100%;
+    animation: slideImg2_onama 25s infinite;
+}
+
+.slider_img_onama .img3_onama{
+    border: 0;
+    margin-left: 1%;
+    width: 30%;
+    background: url("/Onama3.jpg");
+    background-size: 100%;
+    animation: slideImg3_onama 25s infinite;
+}
+
+@keyframes slideImg1_onama {
+    20% {
+        background: url("/Onama2.jpg");
+        background-size: 100%;
+    }
+    40% {
+        background: url("/Onama3.jpg");
+        background-size: 100%;
+    }
+    60% {
+        background: url("/Onama4.jpg");
+        background-size: 100%;
+    }
+    80% {
+        background: url("/Onama5.jpg");
+        background-size: 100%;
+    }
+    100% {
+        background: url("/Onama1.jpg");
+        background-size: 100%;
+    }
+}
+
+@keyframes slideImg2_onama {
+    20% {
+        background: url("/Onama3.jpg");
+        background-size: 100%;
+    }
+    40% {
+        background: url("/Onama4.jpg");
+        background-size: 100%;
+    }
+    60% {
+        background: url("/Onama5.jpg");
+        background-size: 100%;
+    }
+    80% {
+        background: url("/Onama1.jpg");
+        background-size: 100%;
+    }
+    100% {
+        background: url("/Onama2.jpg");
+        background-size: 100%;
+    }
+}
+
+@keyframes slideImg3_onama {
+    20% {
+        background: url("/Onama4.jpg");
+        background-size: 100%;
+    }
+    40% {
+        background: url("/Onama5.jpg");
+        background-size: 100%;
+    }
+    60% {
+        background: url("/Onama1.jpg");
+        background-size: 100%;
+    }
+    80% {
+        background: url("/Onama2.jpg");
+        background-size: 100%;
+    }
+    100% {
+        background: url("/Onama3.jpg");
+        background-size: 100%;
+    }
+}
+@media (max-width: 1120px){
+    .onama_comp {
+        display: none;
+    }
+    .onama_response {
+        display: block;
+    }
+
+    .slider_img_onama {
+        display: none;
+    }
+
+    .repsus {
+        width: 50%;
+        margin-left: 25%;
+        padding-bottom: 5%;
+    }
+
+    .tekstProjekti {
+        /* text-align: justify; */
+        font-size: 15px;
+    }
+}

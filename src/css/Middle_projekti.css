@@ -1,4 +1,4 @@
-.middle_projekti {
+.middle_repsus {
     width: 100%;
     background-image: url("/background-Dark-Grey.jpg");
     background-attachment: fixed;
@@ -10,6 +10,9 @@
     margin-left: 5.6%;
 }
 
+.repsus_response {
+    display: none;
+}
 .slider_img_repsus div {
     -webkit-box-shadow: 3px 0px 37px 3px rgba(113,203,201,1);
     -moz-box-shadow: 3px 0px 37px 3px rgba(113,203,201,1);
@@ -21,7 +24,7 @@
     width: 30%;
     background: url("/repsus1.jpg");
     background-size: 100%;
-    animation: slideImg1_repsus 15s infinite;
+    animation: slideImg1_repsus 20s infinite;
     padding-top: 19.84375%;
 }
 
@@ -31,7 +34,7 @@
     margin-left: 1%;
     background: url("/repsus2.jpg");
     background-size: 100%;
-    animation: slideImg2_repsus 15s infinite;
+    animation: slideImg2_repsus 20s infinite;
 }
 
 .slider_img_repsus .img3_repsus{
@@ -40,8 +43,9 @@
     width: 30%;
     background: url("/repsus3.jpg");
     background-size: 100%;
-    animation: slideImg3_repsus 15s infinite;
+    animation: slideImg3_repsus 20s infinite;
 }
+
 .tekstProjekti {
     /* text-align: center; */
     color:white;
@@ -59,13 +63,18 @@
     margin-left: 40%;
     padding-bottom: 2%;
 }
+
 @keyframes slideImg1_repsus {
-    33% {
+    25% {
         background: url("/repsus2.jpg");
         background-size: 100%;
     }
-    66% {
+    50% {
         background: url("/repsus3.jpg");
+        background-size: 100%;
+    }
+    75% {
+        background: url("/repsus4.jpg");
         background-size: 100%;
     }
     100% {
@@ -75,11 +84,15 @@
 }
 
 @keyframes slideImg2_repsus {
-    33% {
+    25% {
         background: url("/repsus3.jpg");
         background-size: 100%;
     }
-    66% {
+    50% {
+        background: url("/repsus4.jpg");
+        background-size: 100%;
+    }
+    75% {
         background: url("/repsus1.jpg");
         background-size: 100%;
     }
@@ -90,16 +103,40 @@
 }
 
 @keyframes slideImg3_repsus {
-    33% {
+    25% {
+        background: url("/repsus4.jpg");
+        background-size: 100%;
+    }
+    50% {
         background: url("/repsus1.jpg");
         background-size: 100%;
     }
-    66% {
+    75% {
         background: url("/repsus2.jpg");
         background-size: 100%;
     }
     100% {
         background: url("/repsus3.jpg");
         background-size: 100%;
+    }
+}
+
+@media (max-width: 1120px){
+    .repsus_comp {
+        display: none;
+    }
+    .repsus_response {
+        display: block;
+    }
+
+    .repsus {
+        width: 50%;
+        margin-left: 25%;
+        padding-bottom: 5%;
+    }
+
+    .tekstProjekti {
+        /* text-align: justify; */
+        font-size: 15px;
     }
 }

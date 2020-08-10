@@ -3,11 +3,15 @@
     background-image: url("/Pozadina.jpg");
     background-attachment: fixed;
     margin: 0;
-    padding: 50px 0 80px 0;
+    padding: 50px 0 0px 0;
 }
 .slider_img {
     display: flex;
     margin-left: 5.6%;
+}
+
+.MSB_response {
+    display: none;
 }
 
 .slider_img div {
@@ -21,7 +25,7 @@
     width: 30%;
     background: url("/1.jpg");
     background-size: 100%;
-    animation: slideImg1 15s infinite;
+    animation: slideImg1 20s infinite;
     padding-top: 19.946808511%;
 }
 
@@ -31,7 +35,7 @@
     margin-left: 1%;
     background: url("/2.jpg");
     background-size: 100%;
-    animation: slideImg2 15s infinite;
+    animation: slideImg2 20s infinite;
 }
 
 .slider_img .img3{
@@ -39,7 +43,7 @@
     width: 30%;
     background: url("/3.jpg");
     background-size: 100%;
-    animation: slideImg3 15s infinite;
+    animation: slideImg3 20s infinite;
 }
 .tekstProjekti {
     /* text-align: center; */
@@ -59,12 +63,16 @@
 }
 
 @keyframes slideImg1 {
-    33% {
+    25% {
         background: url("/2.jpg");
         background-size: 100%;
     }
-    66% {
+    50% {
         background: url("/3.jpg");
+        background-size: 100%;
+    }
+    75% {
+        background: url("/4.jpg");
         background-size: 100%;
     }
     100% {
@@ -74,11 +82,15 @@
 }
 
 @keyframes slideImg2 {
-    33% {
+    25% {
         background: url("/3.jpg");
         background-size: 100%;
     }
-    66% {
+    50% {
+        background: url("/4.jpg");
+        background-size: 100%;
+    }
+    75% {
         background: url("/1.jpg");
         background-size: 100%;
     }
@@ -89,11 +101,15 @@
 }
 
 @keyframes slideImg3 {
-    33% {
+    25% {
+        background: url("/4.jpg");
+        background-size: 100%;
+    }
+    50% {
         background: url("/1.jpg");
         background-size: 100%;
     }
-    66% {
+    75% {
         background: url("/2.jpg");
         background-size: 100%;
     }
@@ -101,4 +117,38 @@
         background: url("/3.jpg");
         background-size: 100%;
     }
+}
+
+@media (max-width: 1120px){
+    .MSB {
+        display: none;
+    }
+    .MSB_response {
+        display: block;
+    }
+
+    .sbd {
+        width: 50%;
+        margin-left: 25%;
+        padding-bottom: 5%;
+    }
+
+    .MSB_response .tekstProjekti {
+        text-align: justify;
+        font-size: 15px;
+    }
+    .tekstProjekti {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 980px){
+}
+
+@media (max-width: 900px){
+}
+
+@media (max-width: 850px){
+
+    
 }

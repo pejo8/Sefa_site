@@ -230,7 +230,7 @@ class Slideshow extends React.Component {
                     <p></p>
                   </div> 
                   <a href="/#" className="btn">
-                    <span className="btn-inner">Learn More</span>
+                    <span className="btn-inner">Saznaj više</span>
                   </a>
                 </div>
               </div>
@@ -246,7 +246,7 @@ class Slideshow extends React.Component {
                     <p></p>
                   </div> 
                   <a href="/#" className="btn">
-                    <span className="btn-inner">Learn More</span>
+                    <span className="btn-inner">Saznaj više</span>
                   </a>
                 </div>
               </div>
@@ -262,7 +262,7 @@ class Slideshow extends React.Component {
                     <p></p>
                   </div> 
                   <a href="/#" className="btn">
-                    <span className="btn-inner">Learn More</span>
+                    <span className="btn-inner">Saznaj više</span>
                   </a>
                 </div>
               </div>
@@ -278,7 +278,7 @@ class Slideshow extends React.Component {
                     <p></p>
                   </div> 
                   <a href="/#" className="btn">
-                    <span className="btn-inner">Learn More</span>
+                    <span className="btn-inner">Saznaj više</span>
                   </a>
                 </div>
               </div>

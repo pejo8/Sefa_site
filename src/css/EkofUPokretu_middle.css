@@ -13,6 +13,8 @@
 .middle_ekofUPokretu .tekst{
     padding: 50px 15% 50px 15%;
     text-align: left;
+    font-size: 18px;
+
 }
 
 .middle_ekofUPokretu .ikonice{
@@ -44,6 +46,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     width: 90%;
+    font-size: 16px;
     margin: 0 0 50px 5%;
     text-align: left;
     -webkit-box-shadow: 3px 0px 37px 3px rgba(113,203,201,1);
@@ -125,7 +128,7 @@
     }
 
     .middle_ekofUPokretu .destinacija{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .middle_ekofUPokretu .ikonice{
@@ -141,7 +144,7 @@
 
     .middle_ekofUPokretu .destinacije .aftermovie{
         font-size: 14px;
-        margin-top: -90px;
+        margin-top: -100px;
     }
 }
 
@@ -151,7 +154,7 @@
     }
 
     .middle_ekofUPokretu .destinacija{
-        font-size: 11.5px;
+        font-size: 12.5px;
     }
 
     .middle_ekofUPokretu .ikonice{
@@ -163,9 +166,8 @@
 @media (max-width: 850px){
 
     .middle_ekofUPokretu .tekst{
-        font-size: 13px;
+        font-size: 15px;
         padding: 10%;
-        text-align: justify;
     }
 
     .middle_ekofUPokretu .naslov_eup{

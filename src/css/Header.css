@@ -7,6 +7,27 @@
     font-family: Arial, Helvetica, sans-serif;
     z-index: 10000;
 }
+#projekti {
+    color: #71cbc9;
+    text-transform: uppercase;
+    padding-top: 25px;
+    text-align: center;
+}
+
+#projekti:hover {
+    color: white;
+}
+
+#clanovi {
+    color: #71cbc9;
+    text-transform: uppercase;
+    padding-top: 25px;
+    text-align: center;
+}
+
+#clanovi:hover {
+    color: white;
+}
 
 .header .logo_header {
     grid-column: 1;

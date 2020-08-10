@@ -15,15 +15,15 @@ class Middle_kontakt extends React.Component {
         <div className="kontakt_fi">
             <div className="icons_kontakt"> <FontAwesomeIcon icon={faPhone} className="icon_fi"/>
                 <div className="kontaktiTekst"> TELEFON </div>
-                <div> <p>+381 63 1521141</p> </div>
+                <div> <p className="podaci">+381 63 1521141</p> </div>
             </div>
             <div className="icons_kontakt"> <FontAwesomeIcon icon={faEnvelope} className="icon_fi" />
                 <div className="kontaktiTekst"> EMAIL </div>
-                <div> sefa.ekof@gmail.com </div>
+                <div> <p className="podaci">sefa.ekof@gmail.com </p></div>
             </div>
             <div className="icons_kontakt"> <FontAwesomeIcon icon={faMapPin} className="icon_fi" />
                 <div className="kontaktiTekst"> ADRESA </div>
-                <div> Kamenicka 6, Beograd </div>
+                <div> <p className="podaci">Kamenicka 6, Beograd</p> </div>
             </div>
         </div>
 
@@ -50,7 +50,7 @@ class Middle_kontakt extends React.Component {
         </div>
 
         <div className="btn_kontakt">
-            <button> Posalji </button>    
+            <button> Pošalji </button>    
         </div>
 
       </div>

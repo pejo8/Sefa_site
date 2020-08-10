@@ -9,7 +9,7 @@ class Timovi extends React.Component {
     return (
       <div className="Timovi">
           <Header />
-          <MiddleTimovi />
+          <MiddleTimovi title="KOMUNIKACIJE"/>
           <Footer />
       </div>
       );

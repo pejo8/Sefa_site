@@ -8,12 +8,11 @@ var slider_content = [<a key={i} href="/"> <img src= {image[i-1]} alt='project' 
 
 class Middle_homepage extends Component {
 
-    componentWillMount(){
+    componentDidMount() {
         this.setState({brojac:i});
-        console.log(this.state);
     }
 
-    nextImage(){
+    nextImage() {
         if(i < image.length){
             i = i+1;
         } else{
@@ -23,7 +22,7 @@ class Middle_homepage extends Component {
         this.setState({brojac:i});
     }
 
-    prewImage(){
+    prewImage() {
         if(i > 1){
             i = i-1;
         } else{
@@ -33,7 +32,7 @@ class Middle_homepage extends Component {
         this.setState({brojac:i});
     }
 
-render(){
+render() {
 
   return (
     <div className="middle">
@@ -43,7 +42,7 @@ render(){
 
         <div className="middle_projekti">
             <div>
-                <p> Nasi projekti. </p>
+                <p> Naši projekti. </p>
             </div>
             <div className="projekti">
                 <div>
@@ -61,7 +60,7 @@ render(){
         </div>
 
         <div className="projekti_response">
-                <p> Nasi projekti </p>
+                <p> Naši projekti </p>
                 <div id="box">
                     {slider_content}
                 </div>
@@ -71,7 +70,7 @@ render(){
 
         <div className="partneri">
             <div className="partneri_tekst">
-                <div className="tekst_nasi"> <p> NASI </p> </div>
+                <div className="tekst_nasi"> <p> NAŠI </p> </div>
                 <div className="tekst_partneri"> <p> PARTNERI </p> </div>
             </div>
             <div className="partneri_logovi">

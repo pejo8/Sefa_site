@@ -143,14 +143,17 @@
     .kontakt_fi {
         position: absolute;
         display: inline-block;
-        margin: -170px 0 0 -125px;
+        margin: -170px 0 0 -190px;
     }
 
     .kontakt_fi .icons_kontakt{
         display: flex;
-        width: 270px;
         margin-bottom: 15px;
         font-size: 15px;
+        text-align: left;
+        width: 155%;
+
+
     }
 
     .kontakt_fi .icons_kontakt .icon_fi {
@@ -172,7 +175,7 @@
 
     .FormContainer {
         width: 95%;
-        margin: 0 0 0 2.5%;
+        margin: 300px 0 0 2.5%;
     }
 
     .poruka {

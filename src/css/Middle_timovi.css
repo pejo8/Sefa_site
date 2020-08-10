@@ -1,6 +1,7 @@
 .Middle_timovi {
     width: 100%;
     background-image: url("/background-Dark-Grey.jpg");
+    background-attachment: fixed;
     margin: 0;
     padding: 50px 0 80px 0;
 
@@ -72,6 +73,9 @@
     .clanovi_timovi .clan_t {
         width: 21%;
         margin-left: 3.2%;
+    }
+    .naslov_timovi div1{
+        display: none;
     }
 }
 

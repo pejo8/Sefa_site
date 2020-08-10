@@ -7,9 +7,8 @@ class Projekat extends React.Component {
 
   render() {
     return (
-      <div className="projekat">
+      <div className="repsusPage">
           <Header />
-          
           <MiddleProjekti />
           <Footer />
       </div>
