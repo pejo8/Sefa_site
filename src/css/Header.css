@@ -89,24 +89,26 @@
     display: block;
 }
 
-.NB_css ul li ul li ul {
-    display: none;
-    width: 50%;
-    margin-left: 25%;
-    height: 180px;
-    margin-top: -40px;
-    margin-bottom: -60px;
-}
-
 .NB_css ul li ul li ul li {
     height: 45px;
+}
+/* ODAVDE JE SAMO MENJANO */
+.NB_css ul li ul li ul {
+    position: absolute;
+    display: none;
+    margin: -77px 0 0 29%;
+    width: 12%;
 }
 
 .NB_css ul li ul li ul li a {
     color: #71cbc9;
-    height: 45px;
-    font-size: 13px;
+    height: 60px;
+    font-size: 14px;
+    padding-top: 25px;
+    background-color: black;
 }
+
+/* DOVDE */
 
 .NB_css ul li ul li:hover ul {
     display: block;
