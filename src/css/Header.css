@@ -13,6 +13,19 @@
     padding-top: 25px;
     text-align: center;
 }
+#clanoviHome {
+    font-size: 22px;
+    color: #71cbc9;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#projektiHome {
+    font-size: 22px;
+    color: #71cbc9;
+    text-transform: uppercase;
+    text-decoration: none;
+}
 
 #projekti:hover {
     color: white;
@@ -240,6 +253,14 @@
     }
     .header {
         grid-template-columns: none;
+    }
+
+    #clanoviHome {
+        font-size: 12px;
+    }
+
+    #projektiHome {
+        font-size: 12px;
     }
 
     .header .logo_header button img{

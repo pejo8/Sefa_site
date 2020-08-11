@@ -19,7 +19,7 @@ class Middle_kontakt extends React.Component {
             </div>
             <div className="icons_kontakt"> <FontAwesomeIcon icon={faEnvelope} className="icon_fi" />
                 <div className="kontaktiTekst"> EMAIL </div>
-                <div> <p className="podaci">sefa.ekof@gmail.com </p></div>
+                <div> <p className="podaci">office@sefa.org.rs </p></div>
             </div>
             <div className="icons_kontakt"> <FontAwesomeIcon icon={faMapPin} className="icon_fi" />
                 <div className="kontaktiTekst"> ADRESA </div>

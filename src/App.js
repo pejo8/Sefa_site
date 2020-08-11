@@ -9,6 +9,7 @@ import Kontakt from './component/Kontakt';
 import Timovi from './component/Timovi';
 import PravaStvar from './component/PravaStvar';
 import Projekat from './component/Projekat';
+import BezStraha from './component/BezStraha';
 import SportBusinessDay from './component/SportBusinessDay';
 import EkofUPokretu from './component/EkofUPokretu'
 import BudiDeoSefa from './component/BudiDeoSefa';
@@ -37,6 +38,7 @@ class App extends React.Component {
           <Route path="/savetodavnoTelo" exact component={SavetodavnoTelo} />
           <Route path="/pravaStvar" exact component={PravaStvar} />
           <Route path="/repsus" exact component={Projekat} />
+          <Route path="/bezStraha" exact component={BezStraha} />
           <Route path="/SportBusinessDay" exact component={SportBusinessDay} />
           <Route path="/ekofUPokretu" exact component={EkofUPokretu} />
           <Route path="/budiDeoSefa" exact component={BudiDeoSefa} />

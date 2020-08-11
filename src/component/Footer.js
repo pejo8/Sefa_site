@@ -13,8 +13,8 @@ class Footer extends React.Component {
                 <p> Sefa </p>
                 <ul>
                     <li><a href="/oNama"> O nama </a></li>
-                    <li><a href="/oNama"> Projekti </a></li>
-                    <li><a href="/oNama"> Clanovi </a></li>
+                    <li style={{color:"white"}}>Projekti</li>
+                    <li style={{color:"white"}}>Članovi</li>
                     <li><a href="/partneri"> Partneri </a></li>
                     <li><a href="/magazin"> Magazin </a></li>
                     <li><a href="/kontakt"> Kontakt </a></li>
@@ -27,7 +27,7 @@ class Footer extends React.Component {
                     <li><a href="/pravaStvar"> Prava stvar </a></li>
                     <li><a href="/ekofUPokretu"> Ekof u pokretu </a></li>
                     <li><a href="/SportBusinessDay"> Sport business day </a></li>
-                    <li><a href="/oNama"> Bez straha </a></li>
+                    <li><a href="/bezStraha"> Bez straha </a></li>
                 </ul>
             </div>
             <div className="sajt_footer">
@@ -54,10 +54,10 @@ class Footer extends React.Component {
                     <div> +381 63 1521141 </div>
                 </div>
                 <div className="icons_kontakt_footer"> <FontAwesomeIcon icon={faEnvelope} className="icon_fi_footer" />
-                    <div> sefa.ekof@gmail.com </div>
+                    <div> office@sefa.org.rs </div>
                 </div>
                 <div className="icons_kontakt_footer"> <FontAwesomeIcon icon={faMapPin} className="icon_fi_footer"/>
-                    <div> Kamenicka 6, Beograd </div>
+                    <div> Kamenička 6, Beograd </div>
                 </div>
                 <div className="mreze_footer">
                     <button><a href="https://www.facebook.com/sefa.org/"><img src="/logo_facebook.png" alt="logo" /></a> </button>
@@ -69,7 +69,7 @@ class Footer extends React.Component {
         </div>
 
         <div className="footer_responsive">
-            <div> Sefa na drustvenim mrezama </div>
+            <div> Sefa na društvenim mrežama </div>
             <div className="mreze_footer">
                     <button><a href="https://www.facebook.com/sefa.org/"><img src="/logo_facebook.png" alt="logo" /></a></button>
                     <button><a href="https://www.instagram.com/sefa_org/"><img src="/logo_instagram.png" alt="logo" /></a></button>

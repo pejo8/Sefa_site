@@ -73,11 +73,11 @@ class Header extends Component {
                 <li><Link to="/repsus"> Repsus </Link></li>
                 <li><Link to="/ekofUPokretu"> ekof u pokretu </Link></li>
                 <li><Link to="/SportBusinessDay"> sport business day </Link></li>
-                <li><Link to="/#"> bez straha </Link></li>
+                <li><Link to="/bezStraha"> bez straha </Link></li>
               </ul>
             </li>
             <div>
-              <li className="li_clanovi" id="clanovi"> Clanovi <FontAwesomeIcon icon={faChevronCircleDown} className="fi_menu"/>
+              <li className="li_clanovi" id="clanovi"> Članovi <FontAwesomeIcon icon={faChevronCircleDown} className="fi_menu"/>
                 <ul>
                   <li><Link to="/#"> Timovi <FontAwesomeIcon icon={faChevronCircleDown} className="fi_menu"/> </Link>
                     <ul>
@@ -115,16 +115,16 @@ class Header extends Component {
 
           <ul>
             <li><Link to="/oNama"> O nama </Link></li>
-            <li><a href="/#"> Projekti </a>
+            <li id="projektiHome"> Projekti
               <ul>
                 <li><Link to="/repsus"> Repsus </Link></li>
                 <li><Link to="/pravaStvar"> prava stvar </Link></li>
                 <li><Link to="/ekofUPokretu"> ekof u pokretu </Link></li>
                 <li><Link to="/SportBusinessDay"> sport business day </Link></li>
-                <li><Link to="/#"> bez straha </Link></li>
+                <li><Link to="/bezStraha"> bez straha </Link></li>
               </ul>
             </li>
-              <li><a href="/#" className="nsk"> Članovi </a>
+              <li className="nsk" id="clanoviHome"> Članovi
                 <ul>
                   <li>
                     <label className="timoviTekst">
@@ -143,8 +143,8 @@ class Header extends Component {
                   <li><Link to="/budiDeoSefa"> Budi deo SEFA-e </Link></li>
                 </ul>
               </li>
-              <li><a href="/#" className="nsk">Partneri</a></li>
-              <li><a href="/#" className="nsk">Magazin</a></li>
+              <li><a href="/partneri" className="nsk">Partneri</a></li>
+              <li><a href="/magazin" className="nsk">Magazin</a></li>
               <li><Link to="/kontakt" className="nsk">Kontakt</Link></li>
           </ul>
       </div>

@@ -1,0 +1,119 @@
+#naslovBezStraha {
+    color: white;
+    text-align: center;
+    padding-bottom: 3%;
+    font-size: 40px;
+}
+
+.slider_img_bezStraha {
+    display: flex;
+    margin-left: 5.6%;
+}
+
+.slider_img_bezStraha .img1_bezStraha{
+    border: 0;
+    width: 30%;
+    background: url("/bezStraha1.jpg");
+    background-size: 100%;
+    animation: slideImg1_bezStraha 30s infinite;
+    padding-top: 19.84375%;
+}
+
+.slider_img_bezStraha .img2_bezStraha{
+    border: 0;
+    width: 30%;
+    margin-left: 1%;
+    background: url("/bezStraha2.jpg");
+    background-size: 100%;
+    animation: slideImg2_bezStraha 30s infinite;
+}
+
+.slider_img_bezStraha .img3_bezStraha{
+    border: 0;
+    margin-left: 1%;
+    width: 30%;
+    background: url("/bezStraha3.jpg");
+    background-size: 100%;
+    animation: slideImg3_bezStraha 30s infinite;
+}
+
+@keyframes slideImg1_bezStraha {
+    17% {
+        background: url("/bezStraha2.jpg");
+        background-size: 100%;
+    }
+    34% {
+        background: url("/bezStraha3.jpg");
+        background-size: 100%;
+    }
+    50% {
+        background: url("/bezStraha4.jpg");
+        background-size: 100%;
+    }
+    67% {
+        background: url("/bezStraha5.jpg");
+        background-size: 100%;
+    }
+    84% {
+        background: url("/bezStraha6.jpg");
+        background-size: 100%;
+    }
+    100% {
+        background: url("/bezStraha1.jpg");
+        background-size: 100%;
+    }
+}
+
+@keyframes slideImg2_bezStraha {
+    17% {
+        background: url("/bezStraha3.jpg");
+        background-size: 100%;
+    }
+    34% {
+        background: url("/bezStraha4.jpg");
+        background-size: 100%;
+    }
+    50% {
+        background: url("/bezStraha5.jpg");
+        background-size: 100%;
+    }
+    67% {
+        background: url("/bezStraha6.jpg");
+        background-size: 100%;
+    }
+    84% {
+        background: url("/bezStraha1.jpg");
+        background-size: 100%;
+    }
+    100% {
+        background: url("/bezStraha2.jpg");
+        background-size: 100%;
+    }
+}
+
+@keyframes slideImg3_bezStraha {
+    17% {
+        background: url("/bezStraha4.jpg");
+        background-size: 100%;
+    }
+    34% {
+        background: url("/bezStraha5.jpg");
+        background-size: 100%;
+    }
+    50% {
+        background: url("/bezStraha6.jpg");
+        background-size: 100%;
+    }
+    67% {
+        background: url("/bezStraha1.jpg");
+        background-size: 100%;
+    }
+    84% {
+        background: url("/bezStraha2.jpg");
+        background-size: 100%;
+    }
+    100% {
+        background: url("/bezStraha3.jpg");
+        background-size: 100%;
+    }
+}
